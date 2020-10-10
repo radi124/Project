@@ -1,0 +1,20 @@
+#NavigationCenter {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  height: 80px;
+  color: white;
+}
+#Navigation {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#logo {
+  color: red;
+}
+.Navigation {
+  color: yellows;
+}
