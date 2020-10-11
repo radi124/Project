@@ -1,0 +1,45 @@
+/*#S1Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+#S1Title {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+#S2Center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#S2 {
+  width: 100%;
+
+  border: 1px solid black;
+  height: 250px;
+  width: 250px;
+}
+#S3 {
+  width: 100%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+  height: 250px;
+  width: 250px;
+}
+#S4 {
+  width: 100%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+  height: 250px;
+  width: 250px;
+}

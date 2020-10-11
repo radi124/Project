@@ -1,4 +1,5 @@
 #NavigationCenter {
+  width: 100%;
   background-color: blue;
   display: flex;
   flex-direction: row;
@@ -17,5 +18,7 @@
   padding-right: 200px;
 }
 .Navigation {
-  color: yellows;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
 }

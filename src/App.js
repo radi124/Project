@@ -2,28 +2,23 @@ import React from "react";
 import "./App.css";
 import { Navigation } from "./Navigation";
 import { Pict } from "./Pict";
-const Drugi = (props) => {
-  return (
-    <div id="siema">
-      {props.title} {props.subtitle}
-    </div>
-  );
-};
-
+import {Section1} from "./Section1";
 function App() {
   return (
     <div className="App">
       <Navigation
-        zdj="tuBedzieZdj"
+        zdj="tuBedzieLogo"
         menu="galeria"
         byk="menu"
         dzik="okolica"
         jeleń="klikja"
         sarna="to_niezła_sarna"
-      />
-
-      <Drugi title={5} subtitle="napis" />
+         />
       <Pict zdjecie="xd" />
+      <Section1 title="witamy w restauracji kurwy" 
+      FirstN="photo" SecondN="photo2" ThirdN="photo3"/>
+      
+
     </div>
   );
 }
