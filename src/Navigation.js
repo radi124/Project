@@ -1,16 +1,32 @@
 import React from "react";
 import "./Navigation.css";
-export const Navigation = (props) => {
+import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Link } from "react-router-dom";
+
+export const Navigation = () => {
   return (
-    <div id="NavigationCenter">
-      <div id="logo">
-        <div id="Navigation">{props.zdj}</div>
-      </div>
-      <div id="Navigation">{props.menu}</div>
-      <div id="Navigation">{props.byk}</div>
-      <div id="Navigation">{props.dzik}</div>
-      <div className="Navigation">{props.jeleń}</div>
-      <div className="Navigation">{props.sarna}</div>
-    </div>
+    <Grid>
+      <Row center="xs">
+        <Col xs={12} sm={12} md={4} lg={5}>
+          <div id="Navigation">Logo</div>
+        </Col>
+        <Col xs={12} sm={10} md={8} lg={7}>
+          <Row around="xs">
+            <Col>
+              <Link id="Navigation" to="/">Home Page</Link>
+            </Col>
+            <Col>
+              <Link id="Navigation" to="/gallery">Gallery</Link>
+            </Col>
+            <Col>
+              <Link id="Navigation" to="/offer">Offer</Link>
+            </Col>
+            <Col>
+              <Link className="Navigations" to="/contact">Contact</Link>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Grid>
   );
 };

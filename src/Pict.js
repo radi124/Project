@@ -1,9 +1,15 @@
 import React from "react";
 import "./Pict.css";
+import { Grid, Row, Col } from "react-flexbox-grid";
+
 export const Pict = (props) => {
   return (
-    <div id="BPict">
-      <div id="thatIsFirstPhoto">{props.zdjecie}</div>
-    </div>
+    <Grid>
+      <Row>
+        <Col>
+          <div id="thatIsFirstPhoto">{props.zdjecie}</div>
+        </Col>
+      </Row>
+    </Grid>
   );
 };
