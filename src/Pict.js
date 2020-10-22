@@ -4,10 +4,11 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 
 export const Pict = (props) => {
   return (
-    <Grid>
-      <Row>
+    <Grid id="bm">
+      <Row center="xs">
         <Col>
-          <div id="thatIsFirstPhoto">{props.zdjecie}</div>
+          <div id="Pict">{props.zdjecie}</div>
+
         </Col>
       </Row>
     </Grid>

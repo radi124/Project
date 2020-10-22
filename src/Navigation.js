@@ -24,6 +24,9 @@ export const Navigation = () => {
             <Col>
               <Link className="Navigations" to="/contact">Contact</Link>
             </Col>
+            <Col>
+              <Link id="Navigation" to="/News">News</Link>
+            </Col>
           </Row>
         </Col>
       </Row>

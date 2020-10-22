@@ -1,7 +1,16 @@
-#S3Container {
-  height: 300px;
+  #S3Container {
+  /* height: 400px; */
+  /* height: 320px; */
+  
+}  
+ 
+
+#autko{
+  height: 400px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
