@@ -7,7 +7,7 @@ export const Pict = (props) => {
     <Grid id="bm">
       <Row center="xs">
         <Col>
-          <div id="Pict">{props.zdjecie}</div>
+               <div id="Pict">{props.zdjecie}</div>
 
         </Col>
       </Row>

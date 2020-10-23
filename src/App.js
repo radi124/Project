@@ -6,13 +6,8 @@ import { Section1 } from "./Section1";
 import { Section2 } from "./Section2";
 import { Section3 } from "./Section3";
 import { News } from "./News";
-import { Grid, Row, Col } from 'react-flexbox-grid';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -24,29 +19,26 @@ function App() {
             <Pict zdjecie="tutaj bedzie galeria" />
           </Route>
 
-
           <Route path="/contact">
-            <Section1 title="Tutaj beda wskazowki dojazdu i kontakt"
-              /*FirstN="photo" */ SecondN="photo2" ThirdN="photo3" />
+            <Section1
+              title="Tutaj beda wskazowki dojazdu i kontakt"
+              SecondN="photo2"
+              ThirdN="photo3"
+            />
           </Route>
           <Route path="/News">
             <News news=" Informacje O NAS " />
           </Route>
 
-
-          <Route path="/offer">
+          {/* <Route path="/offer">
             <Section2 Drugazakładka="Tutaj bedzie nasza oferta" />
-          </Route>
+          </Route> */}
           <Route path="/">
             <Section3 S3="HOME WITAJ NA MOJEJ STRONIE GLOWNEJ" />
             <Section2 Drugazakładka="Tutaj bedzie nasza oferta" />
             <News news=" Informacje O NAS " />
-
           </Route>
-
-
         </Switch>
-
       </Router>
     </div>
   );
