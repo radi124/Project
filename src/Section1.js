@@ -14,13 +14,7 @@ export const Section1 = (props) => {
                 {<div id="S3">  {props.SecondN}   <h3>drugie</h3></div>}
                 {/* <div id="S4"> {props.ThirdN}  <h3>trzecie</h3></div> */}
 
-
             </div>
-
-
-
         </div>
-
-
     )
 }
