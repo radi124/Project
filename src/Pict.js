@@ -1,5 +1,4 @@
 import React from "react";
-import "./Pict.css";
 import { Grid, Row, Col } from "react-flexbox-grid";
 
 export const Pict = (props) => {
@@ -7,8 +6,7 @@ export const Pict = (props) => {
     <Grid id="bm">
       <Row center="xs">
         <Col>
-               <div id="Pict">{props.zdjecie}</div>
-
+          <div id="Pict">{props.zdjecie}</div>
         </Col>
       </Row>
     </Grid>

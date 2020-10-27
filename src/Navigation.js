@@ -10,37 +10,38 @@ export const Navigation = () => {
       <Grid>
         <Row center="xs">
           <Col xs={12} sm={12} md={4} lg={5}>
-            MYCZKOWCE SADYBA
+            <Link to="/">
+              <LogoWrapper>
+                MYCZKOWCE <div>SADYBA</div>
+              </LogoWrapper>
+            </Link>
           </Col>
           <Col xs={12} sm={10} md={8} lg={7} id="SecondCol">
             <Row around="xs">
               <Col>
-                <Link id="Navigation" to="/">
-                  Home Page
-                </Link>
+                <ButtonWrapper>
+                  <Link to="/">Strona główna</Link>
+                </ButtonWrapper>
               </Col>
               <Col>
-                <Button isClicked={true}>
-                  <div> test tekst</div>
-                  <Link to="/gallery">Gallery</Link>
-                </Button>
+                <ButtonWrapper>
+                  <Link to="/Restauracja">Restauracja</Link>
+                </ButtonWrapper>
               </Col>
               <Col>
-                <Button>
-                  <Link id="Navigation" to="/offer">
-                    Offer
-                  </Link>
-                </Button>
+                <ButtonWrapper>
+                  <Link to="/gallery">Galeria</Link>
+                </ButtonWrapper>
               </Col>
               <Col>
-                <Link id="Navigation" to="/contact">
-                  Contact
-                </Link>
+                <ButtonWrapper>
+                  <Link to="/contact">kontakt</Link>
+                </ButtonWrapper>
               </Col>
               <Col>
-                <Link id="Navigation" to="/News">
-                  News
-                </Link>
+                <ButtonWrapper>
+                  <Link to="/Domki">Domki</Link>
+                </ButtonWrapper>
               </Col>
             </Row>
           </Col>
@@ -59,16 +60,23 @@ const NavigationWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-decoration: none;
+  .center-xs {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
 `;
-const Button = styled.div`
-  border: 1px solid black;
+const ButtonWrapper = styled.div`
   a {
-    color: ${(props) => (props.isClicked === true ? "green" : "blue")};
+    color: rgb(255, 255, 255);
+    text-decoration: none;
   }
-  div {
-    color: orange;
-    :hover {
-      color: green;
-    }
-  }
+`;
+const LogoWrapper = styled.a`
+  color: rgb(236, 159, 14);
+  font-size: 27px;
+  font-family: Courier New;
 `;

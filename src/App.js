@@ -5,7 +5,8 @@ import { Pict } from "./Pict";
 import { Section1 } from "./Section1";
 import { Section2 } from "./Section2";
 import { Section3 } from "./Section3";
-import { News } from "./News";
+import { Domki } from "./Domki";
+import { Restauracja } from "./Restauracja";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -26,17 +27,16 @@ function App() {
               ThirdN="photo3"
             />
           </Route>
-          <Route path="/News">
-            <News news=" Informacje O NAS " />
+          <Route path="/Domki">
+            <Domki Domki=" Domki do wynajecia " />
+          </Route>
+          <Route path="/Restauracja">
+            <Restauracja />
           </Route>
 
-          {/* <Route path="/offer">
-            <Section2 Drugazakładka="Tutaj bedzie nasza oferta" />
-          </Route> */}
           <Route path="/">
-            <Section3 S3="HOME WITAJ NA MOJEJ STRONIE GLOWNEJ" />
-            <Section2 Drugazakładka="Tutaj bedzie nasza oferta" />
-            <News news=" Informacje O NAS " />
+            <Section2 Drugazakładka="O NAS" />
+            <Section3 />
           </Route>
         </Switch>
       </Router>
