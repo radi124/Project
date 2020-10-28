@@ -42,7 +42,9 @@ export const Section2 = (props) => {
               <PhotoColumn src={photo1} />
             </Col>
             <Col xs={12} sm={7} md={4} lg={7}>
-              <H2Wrapper>Restauracja</H2Wrapper>
+              <H2Wrapper>
+                <a href="../Restauracja">Restauracja</a>
+              </H2Wrapper>
               Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
               pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
               malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
@@ -51,7 +53,9 @@ export const Section2 = (props) => {
                 amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
                 non urna. Vestibulum commodo volutpat a,
               </div>
-              <InfoButton>Dowiedz się Więcej</InfoButton>
+              <InfoButton>
+                <a href="../Restauracja">Dowiedz się więcej</a>
+              </InfoButton>
             </Col>
           </Row>
           <Row center="xs">
@@ -61,7 +65,9 @@ export const Section2 = (props) => {
         <Domki>
           <Row center="xs">
             <Col xs={12} sm={7} md={4} lg={7}>
-              <H2Wrapper>Domki</H2Wrapper>
+              <H2Wrapper>
+                <a href="../Domki">Domki</a>
+              </H2Wrapper>
               Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
               pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
               malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
@@ -70,7 +76,9 @@ export const Section2 = (props) => {
                 amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
                 non felis urna. Vestibulum commodo volutpat a,
               </div>
-              <InfoButton>Dowiedz się Więcej</InfoButton>
+              <InfoButton>
+                <a href="../Domki">Dowiedz się więcej</a>
+              </InfoButton>
             </Col>
             <Col xs={12} sm={5} md={4} lg={5}>
               <PhotoColumn src={photo2} />
@@ -125,6 +133,10 @@ const InfoButton = styled.button`
   cursor: pointer;
   color: white;
   background-color: #006633;
+  a {
+    color: #ffff;
+    text-decoration: none;
+  }
   
   1.1px -0.9px 0px #848484;
   border: none;
@@ -134,10 +146,14 @@ const InfoButton = styled.button`
 const H2Wrapper = styled.h2`
   color: black;
   padding-top: 30px;
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
 `;
 const Domki = styled.div`
   padding-top: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 55px;
 `;
 const Restauracja = styled.div`
   padding-top: 30px;
