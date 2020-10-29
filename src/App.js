@@ -21,14 +21,10 @@ function App() {
           </Route>
 
           <Route path="/contact">
-            <Section1
-              title="Tutaj beda wskazowki dojazdu i kontakt"
-              SecondN="photo2"
-              ThirdN="photo3"
-            />
+            <Section1 />
           </Route>
           <Route path="/Domki">
-            <Domki Domki=" Domki do wynajecia " />
+            <Domki />
           </Route>
           <Route path="/Restauracja">
             <Restauracja />

@@ -34,7 +34,7 @@ export const Navigation = () => {
               </Col>
               <Col>
                 <ButtonWrapper>
-                  <Link to="/contact">kontakt</Link>
+                  <Link to="/contact">Kontakt</Link>
                 </ButtonWrapper>
               </Col>
               <Col>
