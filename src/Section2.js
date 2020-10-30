@@ -32,7 +32,9 @@ export const Section2 = (props) => {
                 porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor sit
                 amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
               </div>
-              <InfoButton>Dowiedz się Więcej</InfoButton>
+              <InfoButtonWrapper>
+                <InfoButton> Więcej</InfoButton>
+              </InfoButtonWrapper>
             </Col>
           </InfoWrapper>
         </Row>
@@ -53,9 +55,11 @@ export const Section2 = (props) => {
                 amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
                 non urna. Vestibulum commodo volutpat a,
               </div>
-              <InfoButton>
-                <a href="../Restauracja">Dowiedz się więcej</a>
-              </InfoButton>
+              <InfoButtonWrapper>
+                <InfoButton>
+                  <a href="../Restauracja">więcej</a>
+                </InfoButton>
+              </InfoButtonWrapper>
             </Col>
           </Row>
           <Row center="xs">
@@ -76,9 +80,11 @@ export const Section2 = (props) => {
                 amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
                 non felis urna. Vestibulum commodo volutpat a,
               </div>
-              <InfoButton>
-                <a href="../Domki">Dowiedz się więcej</a>
-              </InfoButton>
+              <InfoButtonWrapper>
+                <InfoButton>
+                  <a href="../Domki"> więcej</a>
+                </InfoButton>
+              </InfoButtonWrapper>
             </Col>
             <Col xs={12} sm={5} md={4} lg={5}>
               <PhotoColumn src={photo2} />
@@ -107,6 +113,7 @@ const Photo = styled.img`
   border-radius: 12px;
   box-shadow: 0 0px 6px rgba(0, 0, 0, 0.12), 0 0px 6px rgba(0, 0, 0, 0.12);
   transition: 0.5s;
+
   :hover {
     box-shadow: 0 0px 12px rgba(0, 0, 0, 0.24), 0 0px 12px rgba(0, 0, 0, 0.24);
     cursor: pointer;
@@ -133,6 +140,7 @@ const InfoButton = styled.button`
   cursor: pointer;
   color: white;
   background-color: #006633;
+  text-transform: uppercase;
   a {
     color: #ffff;
     text-decoration: none;
@@ -157,4 +165,7 @@ const Domki = styled.div`
 `;
 const Restauracja = styled.div`
   padding-top: 30px;
+`;
+const InfoButtonWrapper = styled.div`
+  padding-top: 20px;
 `;

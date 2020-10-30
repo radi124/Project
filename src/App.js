@@ -32,9 +32,9 @@ function App() {
 
           <Route path="/">
             <Section2 Drugazakładka="O NAS" />
-            <Section3 />
           </Route>
         </Switch>
+        <Section3 />
       </Router>
     </div>
   );

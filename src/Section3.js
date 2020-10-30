@@ -33,20 +33,24 @@ export const Section3 = () => {
               <Border></Border>
             </Col>
           </Row>
+
           <Row center="xs">
-            <SecondWrapper>
-              <Col xs={2} sm={4} md={4} lg={4}>
-                Copyright © 2018-2020 Sadyba Sp. z o.o. All rights reserved.
-              </Col>
-              <Col xs={4} sm={4} md={4} lg={4}>
-                <PhotoWrapper>
-                  <Photo src={photo1} />
-                  609 470 676
-                </PhotoWrapper>
-              </Col>
-              <Col xs={3} sm={4} md={4} lg={4}>
-                <ContactWrapper>
-                  <Contact>
+            <Col xs={12}>
+              <Row>
+                <Col xs={6} sm={4} md={4} lg={4}>
+                  <CopyRightWrapper>
+                    Copyright © 2018-2020 Sadyba Sp. z o.o. All rights reserved.
+                  </CopyRightWrapper>
+                </Col>
+                <Col xs={6} sm={4} md={4} lg={4}>
+                  <PhotoWrapper>
+                    <Photo src={photo1} />
+                    609 470 676
+                  </PhotoWrapper>
+                </Col>
+
+                <Col xs={12} sm={4} md={4} lg={4}>
+                  <IconsWrapper>
                     <FbWrapper>
                       {" "}
                       <a href="https://www.facebook.com/myczkowcesadyba/?epa=SEARCH_BOX">
@@ -69,10 +73,10 @@ export const Section3 = () => {
                         <Photo src={photo5} />{" "}
                       </a>
                     </MessWrapper>
-                  </Contact>
-                </ContactWrapper>
-              </Col>
-            </SecondWrapper>
+                  </IconsWrapper>
+                </Col>
+              </Row>
+            </Col>
           </Row>
         </NavigationWrapper2>
       </Grid>
@@ -120,15 +124,9 @@ const Border = styled.tr`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100vw;
 `;
-const SecondWrapper = styled.div`
-  align-items: center;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 150px;
-`;
 const Photo = styled.img`
   width: 30px;
 `;
@@ -137,19 +135,9 @@ const PhotoWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 20px;
 `;
-const ContactWrapper = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-const Contact = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
+
 const FbWrapper = styled.div`
   align-items: center;
   display: flex;
@@ -176,4 +164,15 @@ const MessWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+`;
+
+const IconsWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+`;
+const CopyRightWrapper = styled.div`
+  padding-top: 20px;
 `;
