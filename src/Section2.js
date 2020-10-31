@@ -7,6 +7,14 @@ import photo3 from "./images/rrrr.jpg";
 import photo4 from "./images/sadyba.jpg";
 import photo5 from "./images/sadyba2.jpg";
 import photo6 from "./images/sadyba3.jpg";
+//#826443
+//#9e7b53eb
+//#826443
+//rgb(158 126 65)
+//rgb(144 108 80)
+//rgba(93, 51, 37, 0.8);
+
+// #09121A //!!
 
 export const Section2 = (props) => {
   return (
