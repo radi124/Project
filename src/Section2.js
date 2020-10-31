@@ -4,12 +4,15 @@ import styled from "styled-components";
 import photo1 from "./images/r.jpg";
 import photo2 from "./images/rr.jpg";
 import photo3 from "./images/rrrr.jpg";
+import photo4 from "./images/sadyba.jpg";
+import photo5 from "./images/sadyba2.jpg";
+import photo6 from "./images/sadyba3.jpg";
 
 export const Section2 = (props) => {
   return (
     <>
       <ImageWrapper>
-        <Image src={photo3} />
+        <Image src={photo4} />
       </ImageWrapper>
       <Grid>
         <Row center="xs">
