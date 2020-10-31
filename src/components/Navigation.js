@@ -35,11 +35,11 @@ export const Navigation = () => {
       <Grid>
         <Row center="xs">
           <Col xs={12} sm={12} md={4} lg={5}>
-            <Link to="/">
-              <LogoWrapper>
+            <LogoWrapper>
+              <Link to="/">
                 MYCZKOWCE <div>SADYBA</div>
-              </LogoWrapper>
-            </Link>
+              </Link>
+            </LogoWrapper>
           </Col>
           <Col xs={12} sm={10} md={8} lg={7} id="SecondCol">
             <MenuWrapper>
@@ -131,10 +131,13 @@ const ButtonWrapper = styled.div`
     text-decoration: none;
   }
 `;
-const LogoWrapper = styled.a`
-  color: rgb(236, 159, 14);
-  font-size: 27px;
-  font-family: Courier New;
+const LogoWrapper = styled.div`
+  a {
+    text-decoration: none;
+    color: rgb(236, 159, 14);
+    font-size: 27px;
+    font-family: Courier New;
+  }
 `;
 const BurgerButtonCross = styled.div`
   background-color: black;

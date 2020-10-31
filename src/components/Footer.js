@@ -1,18 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
-import photo1 from "./images/phone.png";
-import photo2 from "./images/facebook-logo.png";
-import photo3 from "./images/email.png";
-import photo5 from "./images/messenger.png";
-import photo4 from "./images/instagram-logo.png";
+import photo1 from "../images/phone.png";
+import photo2 from "../images/facebook-logo.png";
+import photo3 from "../images/email.png";
+import photo5 from "../images/messenger.png";
+import photo4 from "../images/instagram-logo.png";
+import FacebookLogo from "../images/facebook.svg";
 
 // align-items: center;
 // display: flex;
 // flex-direction: row;
 // justify-content: center;
 
-export const Section3 = () => {
+export const Footer = () => {
   return (
     <NavigationWrapper id="xd">
       <Grid>
@@ -64,7 +65,8 @@ export const Section3 = () => {
                     <InstaWrapper>
                       <a href=" https://www.instagram.com/explore/locations/226554641416824/myczkowce-sadyba/?hl=pl  ">
                         {" "}
-                        <Photo src={photo4} />
+                        {/* <Photo src={photo4} /> */}
+                        <img src={FacebookLogo} />
                       </a>
                     </InstaWrapper>
                     <MessWrapper>

@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
-import photo2 from "./images/rr.jpg";
-export const Restauracja = () => {
+import photo2 from "../../images/rr.jpg";
+
+export const Restaurant = () => {
   return (
     <>
       <ImageWrapper>

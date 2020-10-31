@@ -1,10 +1,10 @@
 import React from "react";
-
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
-import photo2 from "./images/rr.jpg";
-import photo3 from "./images/rrr.jpg";
-export const Domki = () => {
+import photo2 from "../../images/rr.jpg";
+import photo3 from "../../images/rrr.jpg";
+
+export const Homes = () => {
   return (
     <>
       <ImageWrapper>

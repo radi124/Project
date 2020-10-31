@@ -1,12 +1,12 @@
 import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
-import photo1 from "./images/r.jpg";
-import photo2 from "./images/rr.jpg";
-import photo3 from "./images/rrrr.jpg";
-import photo4 from "./images/sadyba.jpg";
-import photo5 from "./images/sadyba2.jpg";
-import photo6 from "./images/sadyba3.jpg";
+import photo1 from "../../images/r.jpg";
+import photo2 from "../../images/rr.jpg";
+import photo3 from "../../images/rrrr.jpg";
+import photo4 from "../../images/sadyba.jpg";
+import photo5 from "../../images/sadyba2.jpg";
+import photo6 from "../../images/sadyba3.jpg";
 //#826443
 //#9e7b53eb
 //#826443
@@ -16,7 +16,7 @@ import photo6 from "./images/sadyba3.jpg";
 
 // #09121A //!!
 
-export const Section2 = (props) => {
+export const Main = (props) => {
   return (
     <>
       <ImageWrapper>
@@ -150,7 +150,7 @@ const InfoButton = styled.button`
   border-radius: 10px;
   cursor: pointer;
   color: white;
-  background-color: #006633;
+  background-color: rgb(236, 159, 14);
   text-transform: uppercase;
   a {
     color: #ffff;
@@ -163,10 +163,10 @@ const InfoButton = styled.button`
     box-shadow: 0 0px 2px  #848484, 0 0px 2px  #848484;
 `;
 const H2Wrapper = styled.h2`
-  color: black;
+  color: #ffff;
   padding-top: 30px;
   a {
-    color: #000000;
+    color: #ffff;
     text-decoration: none;
   }
 `;

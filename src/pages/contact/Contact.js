@@ -3,8 +3,8 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 
 import styled from "styled-components";
 
-export const Section1 = () => {
-  return <Container></Container>;
+export const Contact = () => {
+  return <Container>Contact</Container>;
 };
 
 const Container = styled.div``;
