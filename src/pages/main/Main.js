@@ -56,16 +56,18 @@ export const Main = (props) => {
             </Col>
             <Col xs={12} sm={7} md={4} lg={7}>
               <H2Wrapper>
-                <a href="../Restauracja">Restauracja</a>
+                <a>Restauracja</a>
               </H2Wrapper>
-              Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-              pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
-              malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
-              <div>
-                porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor sit
-                amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
-                non urna. Vestibulum commodo volutpat a,
-              </div>
+              <TextWrapper>
+                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse
+                a pellentesque dui, non felis. Maecenas malesuada elit lectus
+                felis, malesuada ultricies. Curabitur et ligula. Ut molestie a,
+                ultricies
+                <div>
+                  porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor
+                  sit amet enim. Etiam ullamcorper. Slutpat a,
+                </div>
+              </TextWrapper>
               <InfoButtonWrapper>
                 <InfoButton>
                   <a href="../Restauracja">więcej</a>
@@ -81,16 +83,19 @@ export const Main = (props) => {
           <Row center="xs">
             <Col xs={12} sm={7} md={4} lg={7}>
               <H2Wrapper>
-                <a href="../Domki">Domki</a>
+                <a>Domki</a>
               </H2Wrapper>
-              Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-              pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
-              malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
-              <div>
-                porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor sit
-                amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
-                non felis urna. Vestibulum commodo volutpat a,
-              </div>
+              <TextWrapper>
+                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse
+                a pellentesque dui, non felis. Maecenas malesuada elit lectus
+                felis, malesuada ultricies. Curabitur et ligula. Ut molestie a,
+                ultricies
+                <div>
+                  porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor
+                  sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque
+                  dui, non felis urna. Vestibulum commodo volutpat a,
+                </div>
+              </TextWrapper>
               <InfoButtonWrapper>
                 <InfoButton>
                   <a href="../Domki"> więcej</a>
@@ -119,7 +124,8 @@ const PhotoColumn = (props) => {
 
 const Photo = styled.img`
   width: 100%;
-  height: 250px;
+  height: 230px;
+  padding-top: 14px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 0px 6px rgba(0, 0, 0, 0.12), 0 0px 6px rgba(0, 0, 0, 0.12);
@@ -143,7 +149,7 @@ const Image = styled.img`
 `;
 const ImageWrapper = styled.div``;
 const InfoWrapper = styled.a`
-  height: 200px;
+  height: 250px;
 `;
 const InfoButton = styled.button`
   padding: 7px;
@@ -178,5 +184,8 @@ const Restauracja = styled.div`
   padding-top: 30px;
 `;
 const InfoButtonWrapper = styled.div`
-  padding-top: 20px;
+  padding-top: 15px;
+`;
+const TextWrapper = styled.div`
+  text-align: left;
 `;

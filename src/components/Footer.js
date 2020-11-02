@@ -2,16 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import photo1 from "../images/phone.png";
-import photo2 from "../images/facebook-logo.png";
-import photo3 from "../images/email.png";
-import photo5 from "../images/messenger.png";
-import photo4 from "../images/instagram-logo.png";
 import FacebookLogo from "../images/facebook.svg";
-
-// align-items: center;
-// display: flex;
-// flex-direction: row;
-// justify-content: center;
+import EmailLogo from "../images/email.svg";
+import Instalogo from "../images/instagram.svg";
 
 export const Footer = () => {
   return (
@@ -54,27 +47,29 @@ export const Footer = () => {
                   <IconsWrapper>
                     <FbWrapper>
                       {" "}
-                      <a href="https://www.facebook.com/myczkowcesadyba/?epa=SEARCH_BOX">
-                        <Photo src={photo2} />{" "}
+                      <a
+                        href="https://www.facebook.com/myczkowcesadyba/?epa=SEARCH_BOX"
+                        target="_blank"
+                      >
+                        <img src={FacebookLogo} />
                       </a>
                     </FbWrapper>
                     <EMailWrapper>
-                      <Photo src={photo3} />
-                      <a href="../Domki"></a>
+                      <a
+                        href=" https://www.instagram.com/explore/locations/226554641416824/myczkowce-sadyba/?hl=pl  "
+                        target="_blank"
+                      >
+                        <img src={EmailLogo} />
+                      </a>
                     </EMailWrapper>
                     <InstaWrapper>
-                      <a href=" https://www.instagram.com/explore/locations/226554641416824/myczkowce-sadyba/?hl=pl  ">
-                        {" "}
-                        {/* <Photo src={photo4} /> */}
-                        <img src={FacebookLogo} />
+                      <a
+                        href=" https://www.instagram.com/myczkowce_sadyba/?hl=pl"
+                        target="_blank"
+                      >
+                        <img src={Instalogo} />
                       </a>
                     </InstaWrapper>
-                    <MessWrapper>
-                      <a href=" m.me/myczkowcesadybam.me/myczkowcesadyba">
-                        {" "}
-                        <Photo src={photo5} />{" "}
-                      </a>
-                    </MessWrapper>
                   </IconsWrapper>
                 </Col>
               </Row>
@@ -160,12 +155,6 @@ const InstaWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   padding-right: 10px;
-`;
-const MessWrapper = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 `;
 
 const IconsWrapper = styled.div`
