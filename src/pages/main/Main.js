@@ -1,20 +1,10 @@
 import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
-import photo1 from "../../images/r.jpg";
-import photo2 from "../../images/rr.jpg";
-import photo3 from "../../images/rrrr.jpg";
-import photo4 from "../../images/sadyba.jpg";
-import photo5 from "../../images/sadyba2.jpg";
-import photo6 from "../../images/sadyba3.jpg";
-//#826443
-//#9e7b53eb
-//#826443
-//rgb(158 126 65)
-//rgb(144 108 80)
-//rgba(93, 51, 37, 0.8);
+import photo1 from "../../images/src9.jpg";
+import photo2 from "../../images/src12.jpg";
 
-// #09121A //!!
+import photo4 from "../../images/sadyba.jpg";
 
 export const Main = (props) => {
   return (
@@ -23,90 +13,90 @@ export const Main = (props) => {
         <Image src={photo4} />
       </ImageWrapper>
       <Grid>
-        <Row center="xs">
-          <Col xs={12} id="S2Container">
-            <H2Wrapper> {props.Drugazakładka}</H2Wrapper>
-          </Col>
-          <InfoWrapper>
-            <Col>
-              Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-              pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
-              malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
-              <div>
-                porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor sit
-                amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
-                non felis. Maecenas malesuada elit lectus felis, malesuada
-                ultricies. Curabitur et ligula. Ut molestie a, ultricies porta
-                urna. Vestibulum commodo volutpat a,
-              </div>
-              <div>
-                porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor sit
-                amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui,
-              </div>
-              <InfoButtonWrapper>
-                <InfoButton> Więcej</InfoButton>
-              </InfoButtonWrapper>
-            </Col>
-          </InfoWrapper>
-        </Row>
-        <Restauracja>
+        <Container>
           <Row center="xs">
-            <Col xs={12} sm={5} md={4} lg={5}>
-              <PhotoColumn src={photo1} />
+            <Col xs={12} id="S2Container">
+              <H2Wrapper> {props.Drugazakładka}</H2Wrapper>
             </Col>
-            <Col xs={12} sm={7} md={4} lg={7}>
-              <H2Wrapper>
-                <a>Restauracja</a>
-              </H2Wrapper>
-              <TextWrapper>
-                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse
-                a pellentesque dui, non felis. Maecenas malesuada elit lectus
-                felis, malesuada ultricies. Curabitur et ligula. Ut molestie a,
-                ultricies
+            <InfoWrapper>
+              <Col>
+                Obiekt MYCZKOWCE SADYBA położony jest w miejscowości Uherce
+                Mineralne.
                 <div>
-                  porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor
-                  sit amet enim. Etiam ullamcorper. Slutpat a,
+                  Wszystkie domy obejmują salon z sofą oraz w pełni wyposażoną
+                  kuchnię. W łazience znajduje się wanna lub prysznic.
                 </div>
-              </TextWrapper>
-              <InfoButtonWrapper>
-                <InfoButton>
-                  <a href="../Restauracja">więcej</a>
-                </InfoButton>
-              </InfoButtonWrapper>
-            </Col>
-          </Row>
-          <Row center="xs">
-            <Col xs={6} id="S2Container"></Col>
-          </Row>
-        </Restauracja>
-        <Domki>
-          <Row center="xs">
-            <Col xs={12} sm={7} md={4} lg={7}>
-              <H2Wrapper>
-                <a>Domki</a>
-              </H2Wrapper>
-              <TextWrapper>
-                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse
-                a pellentesque dui, non felis. Maecenas malesuada elit lectus
-                felis, malesuada ultricies. Curabitur et ligula. Ut molestie a,
-                ultricies
                 <div>
-                  porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor
-                  sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque
-                  dui, non felis urna. Vestibulum commodo volutpat a,
+                  Obiekt MYCZKOWCE SADYBA jest oddalony o 13 km od Polańczyka i
+                  o 38 km od Arłamowa.
                 </div>
-              </TextWrapper>
-              <InfoButtonWrapper>
-                <InfoButton>
-                  <a href="../Domki"> więcej</a>
-                </InfoButton>
-              </InfoButtonWrapper>
-            </Col>
-            <Col xs={12} sm={5} md={4} lg={5}>
-              <PhotoColumn src={photo2} />
-            </Col>
+                <InfoButtonWrapper>
+                  <InfoButton> Więcej</InfoButton>
+                </InfoButtonWrapper>
+              </Col>
+            </InfoWrapper>
           </Row>
-        </Domki>
+          <Restauracja>
+            <Row center="xs">
+              <Col xs={12} sm={5} md={4} lg={5}>
+                <PhotoColumn src={photo1} />
+              </Col>
+              <Col xs={12} sm={7} md={4} lg={7}>
+                <RestauracjaWrapper>
+                  <H2Wrapper>
+                    <a>Restauracja</a>
+                  </H2Wrapper>
+                  <TextWrapper>
+                    Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
+                    Suspendisse a pellentesque dui, non felis. Maecenas
+                    malesuada elit lectus felis, malesuada ultricies. Curabitur
+                    et ligula. Ut molestie a, ultricies
+                    <div>
+                      porta urna. Vestibulum commodo volutpat a, Lorem ipsum
+                      dolor sit amet enim. Etiam ullamcorper. Slutpat a,
+                    </div>
+                  </TextWrapper>
+                  <InfoButtonWrapper>
+                    <InfoButton>
+                      <a href="../Restauracja">więcej</a>
+                    </InfoButton>
+                  </InfoButtonWrapper>
+                </RestauracjaWrapper>
+              </Col>
+            </Row>
+            <Row center="xs">
+              <Col xs={6} id="S2Container"></Col>
+            </Row>
+          </Restauracja>
+          <Domki>
+            <Row center="xs">
+              <Col xs={12} sm={7} md={4} lg={7}>
+                <H2Wrapper>
+                  <a>Domki</a>
+                </H2Wrapper>
+                <TextWrapper>
+                  Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
+                  Suspendisse a pellentesque dui, non felis. Maecenas malesuada
+                  elit lectus felis, malesuada ultricies. Curabitur et ligula.
+                  Ut molestie a, ultricies
+                  <div>
+                    porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor
+                    sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque
+                    dui, non felis urna. Vestibulum commodo volutpat a,
+                  </div>
+                </TextWrapper>
+                <InfoButtonWrapper>
+                  <InfoButton>
+                    <a href="../Domki"> więcej</a>
+                  </InfoButton>
+                </InfoButtonWrapper>
+              </Col>
+              <Col xs={12} sm={5} md={4} lg={5}>
+                <PhotoColumn src={photo2} />
+              </Col>
+            </Row>
+          </Domki>
+        </Container>
       </Grid>
     </>
   );
@@ -149,7 +139,7 @@ const Image = styled.img`
 `;
 const ImageWrapper = styled.div``;
 const InfoWrapper = styled.a`
-  height: 250px;
+  height: 170px;
 `;
 const InfoButton = styled.button`
   padding: 7px;
@@ -170,22 +160,29 @@ const InfoButton = styled.button`
 `;
 const H2Wrapper = styled.h2`
   color: #ffff;
-  padding-top: 30px;
+  padding-top: px;
   a {
     color: #ffff;
     text-decoration: none;
   }
 `;
 const Domki = styled.div`
-  padding-top: 50px;
-  padding-bottom: 55px;
+  padding-top: 80px;
+  padding-bottom: 65px;
 `;
 const Restauracja = styled.div`
-  padding-top: 30px;
+  padding-top: 40px;
 `;
 const InfoButtonWrapper = styled.div`
   padding-top: 15px;
 `;
 const TextWrapper = styled.div`
   text-align: left;
+`;
+const RestauracjaWrapper = styled.div`
+  padding-top: 30px !important;
+`;
+const Container = styled.div`
+  padding-left: 40px;
+  padding-right: 40px;
 `;

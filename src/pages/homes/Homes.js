@@ -1,8 +1,7 @@
 import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
-import photo2 from "../../images/rr.jpg";
-import photo3 from "../../images/rrr.jpg";
+import photo2 from "../../images/src15.jpg";
 
 export const Homes = () => {
   return (
@@ -12,116 +11,78 @@ export const Homes = () => {
       </ImageWrapper>
 
       <Grid>
-        <Row>
-          <HousesWrapper>
-            <Col>
-              <H1Wrapper>Domki</H1Wrapper>
-              <div>
-                {" "}
-                informacje na temat domków ile osób się zmiesci pokoje itd itd{" "}
-              </div>{" "}
-            </Col>
-          </HousesWrapper>
-        </Row>
-        <Facilities>
-          <H2Wrapper>Udogodnienia/zalety</H2Wrapper>
+        <Container>
           <Row>
-            <Col xs={4} sm={4} md={4} lg={4}>
-              <Ul>
-                <Li>wfessfeefs</Li>
-                <Li>wesfesffes</Li>
-                <Li>wfesfes</Li>
-                <Li>wfesefsfes</Li>
-                <Li>efesfesfesw</Li>
-                <Li>wfesfeefs</Li>
-                <Li>wefsefsfe</Li>
-              </Ul>
-            </Col>
-            <Col xs={4} sm={4} md={4} lg={4}>
-              <Ul>
-                <Li>wfessfeefs</Li>
-                <Li>wesfesffes</Li>
-                <Li>wfesfes</Li>
-                <Li>wfesefsfes</Li>
-                <Li>efesfesfesw</Li>
-                <Li>wfesfeefs</Li>
-                <Li>wefsefsfe</Li>
-              </Ul>
-            </Col>
-            <Col xs={4} sm={4} md={4} lg={4}>
-              <Ul>
-                <Li>wfessfeefs</Li>
-                <Li>wesfesffes</Li>
-                <Li>wfesfes</Li>
-                <Li>wfesefsfes</Li>
-                <Li>efesfesfesw</Li>
-                <Li>wfesfeefs</Li>
-                <Li>wefsefsfe</Li>
-              </Ul>
+            <HousesWrapper>
+              <Col>
+                <H1Wrapper>Domki</H1Wrapper>
+                <div>
+                  {" "}
+                  Wszystkie domy obejmują salon z sofą oraz w pełni wyposażoną
+                  kuchnię. W łazience znajduje się wanna lub prysznic. Mieszczą
+                  one również jadalnię i część wypoczynkową. Codziennie rano na
+                  miejscu serwowane jest śniadanie w formie bufetu. Do
+                  dyspozycji Gości jest taras. W okolicy panują dobre warunki do
+                  uprawiania turystyki pieszej. Na miejscu można wypożyczyć
+                  rowery.
+                </div>{" "}
+              </Col>
+            </HousesWrapper>
+          </Row>
+          <Row>
+            <Col>
+              <H3Wrapper>UDOGODNIENIA</H3Wrapper>
             </Col>
           </Row>
-          <ImageContainer>
+          <Facilities>
             <Row>
-              <Col xs={4} sm={4} md={4} lg={4}>
-                <Firstimagecontainer>
-                  <Col>
-                    <ImageW src={photo3} />
-                  </Col>
-                  <Col></Col>
-                </Firstimagecontainer>
+              <Col xs={3} sm={4} md={4} lg={4}>
+                <ColWrapper>
+                  <Ul>
+                    <Li>ręczniki</Li>
+                    <Li>prywatna łazienka</Li>
+                    <Li>wanna lub prysznic</Li>
+                    <Li>szafa lub garderoba</Li>
+                    <Li>kominek</Li>
+                    <Li>część wypoczynkowa</Li>
+                    <Li>bar</Li>
+                    <Li>restauracja</Li>
+                    <Li>bar z przekąskami</Li>
+                  </Ul>
+                </ColWrapper>
               </Col>
-
               <Col xs={4} sm={4} md={4} lg={4}>
-                <Firstimagecontainer>
-                  <Col>
-                    <ImageW src={photo3} />
-                  </Col>
-                  <Col></Col>
-                </Firstimagecontainer>
-              </Col>
-
-              <Col xs={4} sm={4} md={4} lg={4}>
-                <Firstimagecontainer>
-                  <Col>
-                    <ImageW src={photo3} />
-                  </Col>
-                  <Col></Col>
-                </Firstimagecontainer>
-              </Col>
-            </Row>
-          </ImageContainer>
-          <ImageContainer>
-            <Row>
-              <Col xs={4} sm={4} md={4} lg={4}>
-                <Firstimagecontainer>
-                  <Col>
+                <Ul>
+                  <Li>taras</Li>
+                  <Li>sprzęt do grilowania</Li>
+                  <Li>meble ogrodowe</Li>
+                  <Li>miejsce na piknik</Li>
+                  <Li>miejsce do grilowania</Li>
+                  <Li>plac zabaw</Li>
+                  <Li>sala zabaw</Li>
+                  <Li>
                     {" "}
-                    <ImageW src={photo3} />
-                  </Col>
-                  <Col></Col>
-                </Firstimagecontainer>
+                    zwierzęta są akceptowane (Mogą obowiązywać dodatkowe opłaty)
+                  </Li>
+                  <Li>biblioteka</Li>
+                </Ul>
               </Col>
-
               <Col xs={4} sm={4} md={4} lg={4}>
-                <Firstimagecontainer>
-                  <Col>
-                    <ImageW src={photo3} />{" "}
-                  </Col>
-                  <Col></Col>
-                </Firstimagecontainer>
-              </Col>
-
-              <Col xs={4} sm={4} md={4} lg={4}>
-                <Firstimagecontainer>
-                  <Col>
-                    <ImageW src={photo3} />
-                  </Col>
-                  <Col></Col>
-                </Firstimagecontainer>
+                <Ul>
+                  <Li>bezpłatny parking</Li>
+                  <Li>pokój gier</Li>
+                  <Li>sklep na miejscu</Li>
+                  <Li>sklep z upominkami</Li>
+                  <Li>karaoke</Li>
+                  <Li>ogrzewanie</Li>
+                  <Li>pokoje rodzinne</Li>
+                  <Li>całość dostępna dla wózków inwalidzkich</Li>
+                  <Li>kaplica/świątynia</Li>
+                </Ul>
               </Col>
             </Row>
-          </ImageContainer>
-        </Facilities>
+          </Facilities>
+        </Container>
       </Grid>
     </>
   );
@@ -141,36 +102,26 @@ const HousesWrapper = styled.div`
   width: 100%;
 `;
 const H1Wrapper = styled.h1`
-  color: #000000;
+  color: rgb(236, 159, 14);
 `;
 const Facilities = styled.div`
   width: 100%;
-  height: 350px;
+  height: 550px;
 `;
 const Ul = styled.ul``;
 const Li = styled.li`
   padding-top: 15px;
 `;
-const H2Wrapper = styled.h2`
-  color: #000000;
+const H3Wrapper = styled.h3`
+  color: rgb(236, 159, 14);
 `;
-const ImageContainer = styled.div`
-  height: 430px;
 
-  width: 100%;
+const Container = styled.div`
+  padding-left: 40px;
+  padding-right: 40px;
 `;
-const Firstimagecontainer = styled.div`
-  align-items: center;
+
+const ColWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 400px;
-  width: 100%;
-`;
-const ImageW = styled.img`
-  height: 400px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
 `;

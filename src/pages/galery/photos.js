@@ -1,5 +1,13 @@
-import photo2 from "../../images/rr.jpg";
-
+import photo2 from "./images/src11.jpg";
+import photo3 from "./images/src2.jpg";
+import photo4 from "./images/src1.jpg";
+import photo5 from "./images/src3.jpg";
+import photo6 from "./images/src4.jpg";
+import photo7 from "./images/src5.jpg";
+import photo8 from "./images/src7.jpg";
+import photo9 from "./images/src8.jpg";
+import photo10 from "./images/src13.jpg";
+import photo11 from "./images/src14.jpg";
 export const photos = [
   {
     src: photo2,
@@ -7,42 +15,47 @@ export const photos = [
     height: 3,
   },
   {
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+    src: photo3,
     width: 1,
     height: 1,
   },
   {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+    src: photo4,
     width: 3,
     height: 4,
   },
   {
-    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+    src: photo5,
     width: 3,
     height: 4,
   },
   {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+    src: photo6,
     width: 3,
     height: 4,
   },
   {
-    src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+    src: photo7,
     width: 4,
     height: 3,
   },
   {
-    src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+    src: photo8,
     width: 3,
     height: 4,
   },
   {
-    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    src: photo9,
     width: 4,
     height: 3,
   },
   {
-    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    src: photo10,
+    width: 4,
+    height: 3,
+  },
+  {
+    src: photo11,
     width: 4,
     height: 3,
   },
