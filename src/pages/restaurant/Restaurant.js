@@ -58,35 +58,37 @@ export const Restaurant = () => {
           <H3Wrapper>OFERUJEMY</H3Wrapper>
           <Row center="xs">
             <UlWrapper>
-              <Col>
-                <Col xs={12} sm={2} md={2} lg={2}>
-                  <Ul>
-                    <Li>Indywidualne podejście do klienta</Li>
-                  </Ul>
-                </Col>
-                <Col xs={12} sm={2} md={2} lg={2}>
-                  <Ul>
-                    <Li>Różnorodność oferty</Li>
-                  </Ul>
-                </Col>
-                <Col xs={12} sm={2} md={2} lg={2}>
-                  <Ul>
-                    {" "}
-                    <Li>Wysoka jakość potraw</Li>
-                  </Ul>
-                </Col>
-                <Col xs={12} sm={2} md={2} lg={2}>
-                  <Ul>
-                    {" "}
-                    <Li>Miła i sprawna obsługa</Li>
-                  </Ul>
-                </Col>
-                <Col xs={12} sm={2} md={2} lg={2}>
-                  <Ul>
-                    {" "}
-                    <Li>Doświadczenie w realizacji nietypowych imprez</Li>
-                  </Ul>
-                </Col>
+              <Col xs={12} lgOffset={1} lg={10}>
+                <Row>
+                  <Col xs={12} sm={12} md={4} lg={4}>
+                    <Ul>
+                      <Li>Indywidualne podejście do klienta</Li>
+                    </Ul>
+                  </Col>
+                  <Col xs={12} sm={12} md={4} lg={4}>
+                    <Ul>
+                      <Li>Różnorodność oferty</Li>
+                    </Ul>
+                  </Col>
+                  <Col xs={12} sm={12} md={4} lg={4}>
+                    <Ul>
+                      {" "}
+                      <Li>Doświadczenie w realizacji nietypowych imprez</Li>
+                    </Ul>
+                  </Col>
+                  <Col xs={12} sm={12} md={6} lg={6}>
+                    <Ul>
+                      {" "}
+                      <Li>Miła i sprawna obsługa</Li>
+                    </Ul>
+                  </Col>
+                  <Col xs={12} sm={12} md={6} lg={6}>
+                    <Ul>
+                      {" "}
+                      <Li> Wysoka jakość potraw</Li>
+                    </Ul>
+                  </Col>
+                </Row>
               </Col>
             </UlWrapper>
           </Row>

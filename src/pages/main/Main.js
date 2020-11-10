@@ -31,7 +31,10 @@ export const Main = (props) => {
                   o 38 km od Arłamowa.
                 </div>
                 <InfoButtonWrapper>
-                  <InfoButton> Więcej</InfoButton>
+                  <InfoButton>
+                    {" "}
+                    <a href="../Restauracja"> więcej</a>
+                  </InfoButton>
                 </InfoButtonWrapper>
               </Col>
             </InfoWrapper>

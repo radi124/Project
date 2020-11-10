@@ -31,12 +31,13 @@ export const Homes = () => {
           </Row>
           <Row>
             <Col>
+              {" "}
               <H3Wrapper>UDOGODNIENIA</H3Wrapper>
             </Col>
           </Row>
           <Facilities>
             <Row>
-              <Col xs={3} sm={4} md={4} lg={4}>
+              <Col xs={4} sm={4} md={4} lg={4}>
                 <ColWrapper>
                   <Ul>
                     <Li>ręczniki</Li>
@@ -61,7 +62,6 @@ export const Homes = () => {
                   <Li>plac zabaw</Li>
                   <Li>sala zabaw</Li>
                   <Li>
-                    {" "}
                     zwierzęta są akceptowane (Mogą obowiązywać dodatkowe opłaty)
                   </Li>
                   <Li>biblioteka</Li>
@@ -97,7 +97,7 @@ const HousesWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  height: 150px;
+  height: 300px;
 
   width: 100%;
 `;
@@ -114,11 +114,15 @@ const Li = styled.li`
 `;
 const H3Wrapper = styled.h3`
   color: rgb(236, 159, 14);
+  dispaly: flex;
+  flex-direction: column;
 `;
 
 const Container = styled.div`
   padding-left: 40px;
   padding-right: 40px;
+  display: flex;
+  flex-direction: column;
 `;
 
 const ColWrapper = styled.div`

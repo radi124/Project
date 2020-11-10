@@ -50,11 +50,15 @@ export const Contact = () => {
             <Col>
               <H2Wrapper>KONTAKT</H2Wrapper>
               <ULWrapper>
+                <H3Wrapper>Myczkowce Sadyba</H3Wrapper>
+                <ul>
+                  <li> Myczkowce 82 38-623 Solina</li>
+                </ul>
                 <ul>
                   <li>609 470 676</li>
                 </ul>
                 <ul>
-                  <li></li>
+                  <li>email:</li>
                 </ul>
               </ULWrapper>
             </Col>
@@ -76,8 +80,14 @@ const H2Wrapper = styled.h2`
   color: rgb(236, 159, 14);
 `;
 const ULWrapper = styled.div`
-  display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+`;
+const H3Wrapper = styled.h3`
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 `;
