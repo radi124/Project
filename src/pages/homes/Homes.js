@@ -61,9 +61,10 @@ export const Homes = () => {
                   <Li>miejsce do grilowania</Li>
                   <Li>plac zabaw</Li>
                   <Li>sala zabaw</Li>
-                  <Li>
+                  <Li>kaplica/świątynia</Li>
+                  {/* <Li>
                     zwierzęta są akceptowane (Mogą obowiązywać dodatkowe opłaty)
-                  </Li>
+                  </Li> */}
                   <Li>biblioteka</Li>
                 </Ul>
               </Col>
@@ -77,7 +78,6 @@ export const Homes = () => {
                   <Li>ogrzewanie</Li>
                   <Li>pokoje rodzinne</Li>
                   <Li>całość dostępna dla wózków inwalidzkich</Li>
-                  <Li>kaplica/świątynia</Li>
                 </Ul>
               </Col>
             </Row>
@@ -108,9 +108,14 @@ const Facilities = styled.div`
   width: 100%;
   height: 550px;
 `;
-const Ul = styled.ul``;
+const Ul = styled.ul`
+  border: 1px solid red;
+
+  position: relative;
+`;
 const Li = styled.li`
   padding-top: 15px;
+  border: 1px solid red;
 `;
 const H3Wrapper = styled.h3`
   color: rgb(236, 159, 14);
@@ -119,8 +124,8 @@ const H3Wrapper = styled.h3`
 `;
 
 const Container = styled.div`
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   flex-direction: column;
 `;
