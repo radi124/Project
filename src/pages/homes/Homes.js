@@ -37,24 +37,27 @@ export const Homes = () => {
           </Row>
           <Facilities>
             <Row>
-              <Col xs={4} sm={4} md={4} lg={4}>
+              <Col xs={6} sm={6} md={6} lg={6}>
                 <ColWrapper>
                   <Ul>
                     <Li>ręczniki</Li>
                     <Li>prywatna łazienka</Li>
                     <Li>wanna lub prysznic</Li>
                     <Li>szafa lub garderoba</Li>
-                    <Li>kominek</Li>
+
                     <Li>część wypoczynkowa</Li>
                     <Li>bar</Li>
                     <Li>restauracja</Li>
                     <Li>bar z przekąskami</Li>
+                    <Li>bezpłatny parking</Li>
+                    <Li>pokój gier</Li>
+                    <Li>sklep na miejscu</Li>
+                    <Li>sklep z upominkami</Li>
                   </Ul>
                 </ColWrapper>
               </Col>
-              <Col xs={4} sm={4} md={4} lg={4}>
+              <Col xs={6} sm={6} md={6} lg={6}>
                 <Ul>
-                  <Li>taras</Li>
                   <Li>sprzęt do grilowania</Li>
                   <Li>meble ogrodowe</Li>
                   <Li>miejsce na piknik</Li>
@@ -62,13 +65,17 @@ export const Homes = () => {
                   <Li>plac zabaw</Li>
                   <Li>sala zabaw</Li>
                   <Li>kaplica/świątynia</Li>
+                  <Li>karaoke</Li>
+                  <Li>ogrzewanie</Li>
+                  <Li>pokoje rodzinne</Li>
+                  <Li>całość dostępna dla wózków inwalidzkich</Li>
                   {/* <Li>
                     zwierzęta są akceptowane (Mogą obowiązywać dodatkowe opłaty)
                   </Li> */}
                   <Li>biblioteka</Li>
                 </Ul>
               </Col>
-              <Col xs={4} sm={4} md={4} lg={4}>
+              {/* <Col xs={4} sm={4} md={4} lg={4}>
                 <Ul>
                   <Li>bezpłatny parking</Li>
                   <Li>pokój gier</Li>
@@ -79,7 +86,7 @@ export const Homes = () => {
                   <Li>pokoje rodzinne</Li>
                   <Li>całość dostępna dla wózków inwalidzkich</Li>
                 </Ul>
-              </Col>
+              </Col> */}
             </Row>
           </Facilities>
         </Container>
@@ -106,16 +113,13 @@ const H1Wrapper = styled.h1`
 `;
 const Facilities = styled.div`
   width: 100%;
-  height: 550px;
+  height: 650px;
 `;
 const Ul = styled.ul`
-  border: 1px solid red;
-
   position: relative;
 `;
 const Li = styled.li`
   padding-top: 15px;
-  border: 1px solid red;
 `;
 const H3Wrapper = styled.h3`
   color: rgb(236, 159, 14);
