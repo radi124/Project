@@ -54,10 +54,10 @@ export const Main = (props) => {
         </Row>
         <Restauracja>
           <Row center="xs">
-            <Col xs={12} sm={5} md={4} lg={5}>
+            <Col xs={12} sm={12} md={4} lg={5}>
               <PhotoColumn src={photo1} />
             </Col>
-            <Col xs={12} sm={7} md={4} lg={7}>
+            <Col xs={12} sm={12} md={8} lg={7}>
               <RestauracjaWrapper>
                 <H1Wrapper>
                   <a>Restauracja</a>
@@ -86,7 +86,7 @@ export const Main = (props) => {
         </Restauracja>
         <Domki>
           <Row center="xs">
-            <Col xs={12} sm={7} md={4} lg={7}>
+            <Col xs={12} sm={12} md={8} lg={7}>
               <H1Wrapper>
                 <a>Domki</a>
               </H1Wrapper>
@@ -107,7 +107,7 @@ export const Main = (props) => {
                 </InfoButton>
               </InfoButtonWrapper>
             </Col>
-            <Col xs={12} sm={5} md={4} lg={5}>
+            <Col xs={12} sm={12} md={4} lg={5}>
               <PhotoColumn src={photo2} />
             </Col>
           </Row>
@@ -181,22 +181,20 @@ const H1Wrapper = styled.h1`
   }
 `;
 const Domki = styled.div`
-  padding-top: 80px;
-  padding-bottom: 65px;
+  margin-bottom: 40px;
+  margin-top: 60px;
 `;
 const Restauracja = styled.div`
-  padding-top: 40px;
+  margin-top: 40px;
 `;
 const InfoButtonWrapper = styled.div`
-  padding-top: 15px;
+  padding-top: 20px;
 `;
 const TextWrapper = styled.div`
   text-align: left;
   margin: 0px 15px 0px 15px;
 `;
-const RestauracjaWrapper = styled.div`
-  padding-top: 30px !important;
-`;
+const RestauracjaWrapper = styled.div``;
 
 const FirstTextWrapper = styled.div`
   text-align: left;

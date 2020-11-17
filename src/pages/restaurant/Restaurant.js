@@ -59,36 +59,34 @@ export const Restaurant = () => {
           <Row center="xs">
             <UlWrapper>
               <Col xs={12} lgOffset={1} lg={10}>
-                <Row>
-                  <Col xs={12} sm={12} md={4} lg={4}>
-                    <Ul>
-                      <Li>Indywidualne podejście do klienta</Li>
-                    </Ul>
-                  </Col>
-                  <Col xs={12} sm={12} md={4} lg={4}>
-                    <Ul>
-                      <Li>Różnorodność oferty</Li>
-                    </Ul>
-                  </Col>
-                  <Col xs={12} sm={12} md={4} lg={4}>
-                    <Ul>
-                      {" "}
-                      <Li>Doświadczenie w realizacji nietypowych imprez</Li>
-                    </Ul>
-                  </Col>
-                  <Col xs={12} sm={12} md={6} lg={6}>
-                    <Ul>
-                      {" "}
-                      <Li>Miła i sprawna obsługa</Li>
-                    </Ul>
-                  </Col>
-                  <Col xs={12} sm={12} md={6} lg={6}>
-                    <Ul>
-                      {" "}
-                      <Li> Wysoka jakość potraw</Li>
-                    </Ul>
-                  </Col>
-                </Row>
+                <OffertsWrapper>
+                  <Row>
+                    <Col xs={12} sm={12} md={4} lg={4}>
+                      <OfferWrapper>
+                        {" "}
+                        Indywidualne podejście do klienta{" "}
+                      </OfferWrapper>
+                    </Col>
+                    <Col xs={12} sm={12} md={4} lg={4}>
+                      <OfferWrapper> Różnorodność oferty</OfferWrapper>
+                    </Col>
+                    <Col xs={12} sm={12} md={4} lg={4}>
+                      <OfferWrapper>
+                        {" "}
+                        Doświadczenie w realizacji nietypowych imprez
+                      </OfferWrapper>
+                    </Col>
+                    <Col xs={12} sm={12} md={4} lg={4}>
+                      <OfferWrapper> Miła i sprawna obsługa</OfferWrapper>
+                    </Col>
+                    <Col xs={12} sm={12} md={4} lg={4}>
+                      <OfferWrapper> Wysoka jakość potraw</OfferWrapper>
+                    </Col>
+                    <Col xs={12} sm={12} md={4} lg={4}>
+                      <OfferWrapper> Przyjazna i miła atmosfera</OfferWrapper>
+                    </Col>
+                  </Row>
+                </OffertsWrapper>
               </Col>
             </UlWrapper>
           </Row>
@@ -133,6 +131,8 @@ const H2Wrapper = styled.h2`
 `;
 const TextWrapper = styled.div`
   text-align: left;
+  padding-left: 18px;
+  padding-top: 20px;
   .info {
     padding-top: 25px;
   }
@@ -153,10 +153,7 @@ const Image2 = styled.img`
   -webkit-transition: 0.5s;
   transition: 0.5s;
 `;
-const Ul = styled.ul``;
-const Li = styled.li`
-  padding-top: 15px;
-`;
+
 const UlWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -172,4 +169,18 @@ const H3Wrapper = styled.h3`
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  margin-top: 55px;
+`;
+const OffertsWrapper = styled.div`
+  margin-top: 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+`;
+const OfferWrapper = styled.div`
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
 `;

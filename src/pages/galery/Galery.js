@@ -56,7 +56,7 @@ const H2Wrapper = styled.h2`
   padding-top: 40px;
 `;
 const Image = styled.img`
-  height: 400px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
 `;

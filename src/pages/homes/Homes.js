@@ -44,7 +44,7 @@ export const Homes = () => {
                     <Li>prywatna łazienka</Li>
                     <Li>wanna lub prysznic</Li>
                     <Li>szafa lub garderoba</Li>
-
+                    <Li>bezpłatny parking</Li>
                     <Li>część wypoczynkowa</Li>
                     <Li>bar</Li>
                     <Li>restauracja</Li>
@@ -53,6 +53,7 @@ export const Homes = () => {
                     <Li>pokój gier</Li>
                     <Li>sklep na miejscu</Li>
                     <Li>sklep z upominkami</Li>
+                    <Li>biblioteka</Li>
                   </Ul>
                 </ColWrapper>
               </Col>
@@ -69,24 +70,11 @@ export const Homes = () => {
                   <Li>ogrzewanie</Li>
                   <Li>pokoje rodzinne</Li>
                   <Li>całość dostępna dla wózków inwalidzkich</Li>
-                  {/* <Li>
+                  <Li>
                     zwierzęta są akceptowane (Mogą obowiązywać dodatkowe opłaty)
-                  </Li> */}
-                  <Li>biblioteka</Li>
+                  </Li>
                 </Ul>
               </Col>
-              {/* <Col xs={4} sm={4} md={4} lg={4}>
-                <Ul>
-                  <Li>bezpłatny parking</Li>
-                  <Li>pokój gier</Li>
-                  <Li>sklep na miejscu</Li>
-                  <Li>sklep z upominkami</Li>
-                  <Li>karaoke</Li>
-                  <Li>ogrzewanie</Li>
-                  <Li>pokoje rodzinne</Li>
-                  <Li>całość dostępna dla wózków inwalidzkich</Li>
-                </Ul>
-              </Col> */}
             </Row>
           </Facilities>
         </Container>
@@ -104,16 +92,14 @@ const HousesWrapper = styled.div`
   display: flex;
   flex-direction: row;
 
-  height: 300px;
-
   width: 100%;
 `;
 const H1Wrapper = styled.h1`
   color: rgb(236, 159, 14);
+  margin-top: 30px;
 `;
 const Facilities = styled.div`
   width: 100%;
-  height: 650px;
 `;
 const Ul = styled.ul`
   position: relative;
@@ -125,6 +111,7 @@ const H3Wrapper = styled.h3`
   color: rgb(236, 159, 14);
   dispaly: flex;
   flex-direction: column;
+  margin-top: 30px;
 `;
 
 const Container = styled.div`
