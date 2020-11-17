@@ -13,21 +13,17 @@ export const Navigation = () => {
             <ButtonWrapper>
               <Link to="/">Strona główna</Link>
             </ButtonWrapper>
-
             <ButtonWrapper>
               <Link to="/Restauracja">Restauracja</Link>
             </ButtonWrapper>
-
             <ButtonWrapper>
               <Link to="/gallery">Galeria</Link>
             </ButtonWrapper>
-
-            <ButtonWrapper>
-              <Link to="/contact">Kontakt</Link>
-            </ButtonWrapper>
-
             <ButtonWrapper>
               <Link to="/Domki">Domki</Link>
+            </ButtonWrapper>
+            <ButtonWrapper>
+              <Link to="/contact">Kontakt</Link>
             </ButtonWrapper>
           </Menu>
         </BurgerButtonCross>
@@ -129,6 +125,8 @@ const ButtonWrapper = styled.div`
   a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
   }
 `;
 const LogoWrapper = styled.div`

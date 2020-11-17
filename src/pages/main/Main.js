@@ -9,25 +9,21 @@ import photo4 from "../../images/sadyba.jpg";
 export const Main = (props) => {
   return (
     <>
-      <ImageWrapper>
-        <Image src={photo4} />
-      </ImageWrapper>
+      <Image src={photo4} />
       <Grid>
         <Row center="xs">
+          <Col xs={12}>
+            <H1Wrapper> {props.Drugazakładka}</H1Wrapper>
+          </Col>
           <Col
             xs={12}
-            id="S2Container"
-            md={10}
-            mdofset={1}
             sm={10}
             smofset={1}
+            md={10}
+            mdofset={1}
             lg={8}
             lgofset={2}
           >
-            <H1Wrapper> {props.Drugazakładka}</H1Wrapper>
-          </Col>
-
-          <Col>
             <FirstTextWrapper>
               Obiekt MYCZKOWCE SADYBA położony jest w miejscowości Uherce
               Mineralne. Wszystkie domy obejmują salon z sofą oraz w pełni
@@ -43,75 +39,50 @@ export const Main = (props) => {
               znajduje się wanna lub prysznic. Obiekt MYCZKOWCE SADYBA jest
               oddalony o 13 km od Polańczyka i o 38 km od Arłamowa.
             </FirstTextWrapper>
-
-            <InfoButtonWrapper>
-              <InfoButton>
-                {" "}
-                <a href="../Restauracja"> więcej</a>
-              </InfoButton>
-            </InfoButtonWrapper>
+          </Col>
+          <Col xs={12}>
+            <InfoButton href="../Restauracja"> więcej </InfoButton>
           </Col>
         </Row>
-        <Restauracja>
-          <Row center="xs">
-            <Col xs={12} sm={12} md={4} lg={5}>
-              <PhotoColumn src={photo1} />
-            </Col>
-            <Col xs={12} sm={12} md={8} lg={7}>
-              <RestauracjaWrapper>
-                <H1Wrapper>
-                  <a>Restauracja</a>
-                </H1Wrapper>
-                <TextWrapper>
-                  Lorem ipsum dolor sit amet enim. Etiam ullamcorper.
-                  Suspendisse a pellentesque dui, non felis. Maecenas malesuada
-                  elit lectus felis, malesuada ultricies. Curabitur et ligula.
-                  Ut molestie a, ultricies
-                  <div>
-                    porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor
-                    sit amet enim. Etiam ullamcorper. Slutpat a,
-                  </div>
-                </TextWrapper>
-                <InfoButtonWrapper>
-                  <InfoButton>
-                    <a href="../Restauracja">więcej</a>
-                  </InfoButton>
-                </InfoButtonWrapper>
-              </RestauracjaWrapper>
-            </Col>
-          </Row>
-          <Row center="xs">
-            <Col xs={6} id="S2Container"></Col>
-          </Row>
-        </Restauracja>
-        <Domki>
-          <Row center="xs">
-            <Col xs={12} sm={12} md={8} lg={7}>
-              <H1Wrapper>
-                <a>Domki</a>
-              </H1Wrapper>
-              <TextWrapper>
-                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse
-                a pellentesque dui, non felis. Maecenas malesuada elit lectus
-                felis, malesuada ultricies. Curabitur et ligula. Ut molestie a,
-                ultricies
-                <div>
-                  porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor
-                  sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque
-                  dui, non felis urna. Vestibulum commodo volutpat a,
-                </div>
-              </TextWrapper>
-              <InfoButtonWrapper>
-                <InfoButton>
-                  <a href="../Domki"> więcej</a>
-                </InfoButton>
-              </InfoButtonWrapper>
-            </Col>
-            <Col xs={12} sm={12} md={4} lg={5}>
-              <PhotoColumn src={photo2} />
-            </Col>
-          </Row>
-        </Domki>
+        <Offset />
+        <Row center="xs">
+          <Col xs={12} sm={12} md={4} lg={5}>
+            <PhotoColumn src={photo1} />
+          </Col>
+          <Col xs={12} sm={12} md={8} lg={7}>
+            <H1Wrapper>RESTAURACJA</H1Wrapper>
+            <TextWrapper>
+              Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+              pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
+              malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
+              porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor sit
+              amet enim. Etiam ullamcorper. Slutpat a,
+            </TextWrapper>
+            <InfoButton href="../Restauracja"> więcej </InfoButton>
+          </Col>
+        </Row>
+        <Row center="xs">
+          <Col xs={6} id="S2Container"></Col>
+        </Row>
+        <Offset />
+        <Row center="xs">
+          <Col xs={12} sm={12} md={8} lg={7}>
+            <H1Wrapper>Domki</H1Wrapper>
+            <TextWrapper>
+              Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
+              pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
+              malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
+              porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor sit
+              amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non
+              felis urna. Vestibulum commodo volutpat a,
+            </TextWrapper>
+            <InfoButton href="../Domki"> więcej </InfoButton>
+          </Col>
+          <Col xs={12} sm={12} md={4} lg={5}>
+            <PhotoColumn src={photo2} />
+          </Col>
+        </Row>
+        <Offset />
       </Grid>
     </>
   );
@@ -119,11 +90,9 @@ export const Main = (props) => {
 
 const PhotoColumn = (props) => {
   return (
-    <>
-      <PhotoWrapper>
-        <Photo src={props.src} />
-      </PhotoWrapper>
-    </>
+    <PhotoWrapper>
+      <Photo src={props.src} />
+    </PhotoWrapper>
   );
 };
 
@@ -133,15 +102,7 @@ const Photo = styled.img`
   margin-top: 14px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 0px 6px rgba (119 119 119 0.26),
-    0 0px 6px rgba (119 119 119 0.26);
-  transition: 0.5s;
-
-  :hover {
-    box-shadow: 0 0px 12px rgba (119 119 119 0.26),
-      0 0px 12px rgba (119 119 119 0.26);
-    cursor: pointer;
-  }
+  box-shadow: 0px 0px 29px 2px rgba(119, 119, 119, 0.4);
 `;
 
 const PhotoWrapper = styled.div`
@@ -152,52 +113,40 @@ const Image = styled.img`
   height: 600px;
   width: 100%;
   object-fit: cover;
+  margin-bottom: 40px;
 `;
-const ImageWrapper = styled.div``;
-const InfoButton = styled.button`
-  padding:10px 16px;
+
+const InfoButton = styled.a`
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 10px 16px;
   border-radius: 10px;
-  font-weight:bold;
-  font-size:14px;
-  cursor: pointer;
-  color: white;
+  font-weight: 900;
+  font-size: 18px;
   background-color: rgb(236, 159, 14);
-  text-transform: uppercase;
-  a {
-    color: #ffff;
-    text-decoration: none;
-  }
-  
-  1.1px -0.9px 0px #848484;
+  color: #fff;
+  text-transform: uppercase; 
   border: none;
   :hover {
+    cursor: pointer;
     box-shadow: 0 0px 2px  #848484, 0 0px 2px  #848484;
 `;
-const H1Wrapper = styled.h1`
-  color: #ffff;
-  a {
-    color: #ffff;
-    text-decoration: none;
-  }
+
+const H1Wrapper = styled.h1``;
+
+const Offset = styled.div`
+  margin-top: 100px;
 `;
-const Domki = styled.div`
-  margin-bottom: 40px;
-  margin-top: 60px;
-`;
-const Restauracja = styled.div`
-  margin-top: 40px;
-`;
-const InfoButtonWrapper = styled.div`
-  padding-top: 20px;
-`;
+
 const TextWrapper = styled.div`
   text-align: left;
-  margin: 0px 15px 0px 15px;
+  margin: 0px 15px 40px 15px;
+  line-height: 1.4;
 `;
-const RestauracjaWrapper = styled.div``;
 
 const FirstTextWrapper = styled.div`
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  text-align: justify;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 1.4;
 `;

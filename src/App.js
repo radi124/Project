@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import * as Pages from "./pages";
 import * as Components from "./components";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
