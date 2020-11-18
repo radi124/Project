@@ -44,37 +44,34 @@ export const Contact = () => {
       <ImageWrapper>
         <Image src={img1} />
       </ImageWrapper>
-      <Container>
-        <Grid>
-          <Row>
-            <Col>
-              <ULWrapper>
-                <H2Wrapper>NASZ ADRES</H2Wrapper>
-                {/* <H3Wrapper>Myczkowce Sadyba</H3Wrapper> */}
-                Myczkowce 82
-                <br />
-                38-623 Solina
-                <H2Wrapper>KONTAKT</H2Wrapper>
-                telefon: 609 470 676
-                <br />
-                email:
-                <H2Wrapper>REZERWACJA MIEJSC</H2Wrapper>
-                <a
-                  href="https://www.booking.com/hotel/pl/myczkowce-sadyba.pl.html?label=gen173nr-1FCAEoggI46AdIM1gEaLYBiAEBmAEeuAEXyAEP2AEB6AEB-AELiAIBqAIDuAKYk5X9BcACAdICJDhmMTE1OGQ1LTUwODktNDUxMy04OGNjLTExNDVmODBiZTRmM9gCBuACAQ;sid=8cbc453a049553240d842fb4b431525f;dest_id=-533901;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1605024105;srpvid=d5b270b49b0300f9;type=total;ucfs=1&#tab-main"
-                  target="_blank"
-                >
-                  <ButtonContact>Zarezerwuj już teraz</ButtonContact>
-                </a>
-              </ULWrapper>
-            </Col>
-          </Row>
-        </Grid>
-      </Container>
+
+      <Grid>
+        <Row>
+          <Col>
+            <ULWrapper>
+              <H2Wrapper>NASZ ADRES</H2Wrapper>
+              Myczkowce 82
+              <br />
+              38-623 Solina
+              <H2Wrapper>KONTAKT</H2Wrapper>
+              telefon: 609 470 676
+              <br />
+              email:
+              <H2Wrapper>REZERWACJA MIEJSC</H2Wrapper>
+              <a
+                href="https://www.booking.com/hotel/pl/myczkowce-sadyba.pl.html?label=gen173nr-1FCAEoggI46AdIM1gEaLYBiAEBmAEeuAEXyAEP2AEB6AEB-AELiAIBqAIDuAKYk5X9BcACAdICJDhmMTE1OGQ1LTUwODktNDUxMy04OGNjLTExNDVmODBiZTRmM9gCBuACAQ;sid=8cbc453a049553240d842fb4b431525f;dest_id=-533901;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1605024105;srpvid=d5b270b49b0300f9;type=total;ucfs=1&#tab-main"
+                target="_blank"
+              >
+                <ButtonContact>Zarezerwuj już teraz</ButtonContact>
+              </a>
+            </ULWrapper>
+          </Col>
+        </Row>
+      </Grid>
     </>
   );
 };
 
-const Container = styled.div``;
 const Image = styled.img`
   height: 600px;
   width: 100%;
@@ -87,14 +84,7 @@ const H2Wrapper = styled.h2`
 const ULWrapper = styled.div`
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-`;
-const H3Wrapper = styled.h3`
-  color: rgb(255, 255, 255);
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  display: flex;
+  flex-direction: row;
 `;
 const ButtonContact = styled.button`
 padding: 7px;

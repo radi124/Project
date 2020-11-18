@@ -14,13 +14,13 @@ export const Navigation = () => {
               <Link to="/">Strona główna</Link>
             </ButtonWrapper>
             <ButtonWrapper>
-              <Link to="/Restauracja">Restauracja</Link>
+              <Link to="/restaurant">Restauracja</Link>
             </ButtonWrapper>
             <ButtonWrapper>
               <Link to="/gallery">Galeria</Link>
             </ButtonWrapper>
             <ButtonWrapper>
-              <Link to="/Domki">Domki</Link>
+              <Link to="/cottages">Domki</Link>
             </ButtonWrapper>
             <ButtonWrapper>
               <Link to="/contact">Kontakt</Link>
@@ -47,7 +47,7 @@ export const Navigation = () => {
                 </Col>
                 <Col>
                   <ButtonWrapper>
-                    <Link to="/Restauracja">Restauracja</Link>
+                    <Link to="/restaurant">Restauracja</Link>
                   </ButtonWrapper>
                 </Col>
                 <Col>
@@ -57,13 +57,13 @@ export const Navigation = () => {
                 </Col>
                 <Col>
                   <ButtonWrapper>
-                    <Link to="/contact">Kontakt</Link>
+                    <Link to="/cottages">Domki</Link>
                   </ButtonWrapper>
                 </Col>
                 <Col>
-                  <ButtonWrapper>
-                    <Link to="/Domki">Domki</Link>
-                  </ButtonWrapper>
+                  <InfoButton>
+                    <Link to="../contact">Kontakt</Link>
+                  </InfoButton>
                 </Col>
               </Row>
             </MenuWrapper>
@@ -127,6 +127,13 @@ const ButtonWrapper = styled.div`
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+
+    :hover {
+      text-shadow: 3px 3px 5px #000000;
+      color: #a3a09f;
+      position: relative;
+      top: -6px;
+    }
   }
 `;
 const LogoWrapper = styled.div`
@@ -135,6 +142,9 @@ const LogoWrapper = styled.div`
     color: rgb(236, 159, 14);
     font-size: 27px;
     font-family: Courier New;
+    :hover {
+      text-shadow: 1px 1px 1px #f2ae30;
+    }
   }
 `;
 const BurgerButtonCross = styled.div`
@@ -144,5 +154,23 @@ const MenuWrapper = styled.div`
   display: none;
   @media only screen and (min-width: 768px) {
     display: block;
+  }
+`;
+const InfoButton = styled.div`
+  a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 18px;
+    background-color: rgb(236, 159, 14);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    :hover {
+      cursor: pointer;
+      box-shadow: 0 0px 2px #848484, 0 0px 2px #848484;
+    }
   }
 `;

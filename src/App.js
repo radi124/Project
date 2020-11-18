@@ -15,10 +15,10 @@ function App() {
           <Route path="/contact">
             <Pages.Contact />
           </Route>
-          <Route path="/Domki">
+          <Route path="/cottages">
             <Pages.Homes />
           </Route>
-          <Route path="/Restauracja">
+          <Route path="/restaurant">
             <Pages.Restaurant />
           </Route>
           <Route path="/">
