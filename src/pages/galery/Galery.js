@@ -4,7 +4,6 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import { photos } from "./photos.js";
 import styled from "styled-components";
-import photo1 from "./images/page1.jpg";
 
 export const Galery = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -22,12 +21,10 @@ export const Galery = () => {
 
   return (
     <>
-      <ImageWrapper>
-        <Image src={photo1} />
-      </ImageWrapper>
       <Grid>
+        <br />
+        <H1Wrapper>GALERIA</H1Wrapper>
         <div>
-          <H2Wrapper>GALERIA</H2Wrapper>
           <Gallery photos={photos} onClick={openLightbox} />
           <ModalGateway>
             {viewerIsOpen ? (
@@ -48,16 +45,10 @@ export const Galery = () => {
     </>
   );
 };
-const H2Wrapper = styled.h2`
+const H1Wrapper = styled.h1`
   color: rgb(255, 255, 255);
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 90px;
 `;
-const Image = styled.img`
-  height: 300px;
-  width: 100%;
-  object-fit: cover;
-`;
-const ImageWrapper = styled.div``;
