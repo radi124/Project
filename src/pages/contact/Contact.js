@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import styled from "styled-components";
 import img1 from "./images/img1.webp";
+import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 
 export const Contact = () => {
   return (
@@ -38,6 +39,20 @@ export const Contact = () => {
                 <ButtonContact>Zarezerwuj już teraz</ButtonContact>
               </a>
             </ElementWrapper>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2584.2538108892363!2d20.677571515657647!3d49.63067077937066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1606342013657!5m2!1spl!2spl"
+              width="800"
+              height="600"
+              frameBorder="0"
+              style="border:0;"
+              allowFullScreen=""
+              ariaHidden="false"
+              tabIndex="0"
+            ></iframe>
           </Col>
         </Row>
       </Grid>

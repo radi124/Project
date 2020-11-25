@@ -23,11 +23,12 @@ export const Navigation = () => {
         </BurgerButtonCross>
       </BurgerButtonWrapper>
       <Grid>
-        <Row center="xs">
+        <Row center="xs" start="sm">
           <Col xs={12} sm={12} md={3} lg={4}>
             <LogoWrapper>
               <Link to="/">
-                MYCZKOWCE <div>SADYBA</div>
+                MYCZKOWCE <br />
+                SADYBA
               </Link>
             </LogoWrapper>
           </Col>
@@ -99,14 +100,22 @@ const BurgerButtonWrapper = styled.div`
     a {
       text-decoration: none;
       color: #ffff;
-      margin: 10px 0px;
-      margin-left: 20px;
+      padding: 10px 0px;
+      padding-left: 20px;
       font-size: 18px;
       font-weight: 500;
     }
   }
   .bm-overlay {
     background-color: rgba(0, 0, 0, 0) !important;
+    position: absolute !important;
+    height: 100vh !important;
+    width: 100vw !important;
+    right: 0px;
+    top: 50px;
+  }
+  .bm-menu {
+    overflow: hidden !important;
   }
 `;
 
