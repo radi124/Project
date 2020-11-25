@@ -10,21 +10,15 @@ export const Navigation = () => {
       <BurgerButtonWrapper style={{ height: "50px" }}>
         <BurgerButtonCross>
           <Menu id="burger-menu" right>
-            <ButtonWrapper>
-              <Link to="/">Strona główna</Link>
-            </ButtonWrapper>
-            <ButtonWrapper>
-              <Link to="/restaurant">Restauracja</Link>
-            </ButtonWrapper>
-            <ButtonWrapper>
-              <Link to="/gallery">Galeria</Link>
-            </ButtonWrapper>
-            <ButtonWrapper>
-              <Link to="/cottages">Domki</Link>
-            </ButtonWrapper>
-            <ButtonWrapper>
-              <Link to="/contact">Kontakt</Link>
-            </ButtonWrapper>
+            <Link to="/">Strona główna</Link>
+
+            <Link to="/restaurant">Restauracja</Link>
+
+            <Link to="/gallery">Galeria</Link>
+
+            <Link to="/cottages">Domki</Link>
+
+            <Link to="/contact">Kontakt</Link>
           </Menu>
         </BurgerButtonCross>
       </BurgerButtonWrapper>
@@ -78,7 +72,7 @@ const BurgerButtonWrapper = styled.div`
   height: 38px !important;
   width: 44px;
   position: absolute;
-  right: 40px;
+  right: 50px;
 
   #react-burger-menu-btn {
     width: 44px !important;
@@ -89,15 +83,30 @@ const BurgerButtonWrapper = styled.div`
     height: 6px !important;
     background: white !important;
     width: 44px !important;
-    z-index: 50 !important;
+
     transition: 0.3s;
     :hover {
       cursor: pointer;
     }
   }
   display: block;
-  @media only screen and (min-width: 892px) {
+  @media only screen and (min-width: 992px) {
     display: none;
+  }
+  #burger-menu {
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 80px;
+    a {
+      text-decoration: none;
+      color: #ffff;
+      margin: 10px 0px;
+      margin-left: 20px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  .bm-overlay {
+    background-color: rgba(0, 0, 0, 0) !important;
   }
 `;
 
@@ -152,7 +161,7 @@ const BurgerButtonCross = styled.div`
 `;
 const MenuWrapper = styled.div`
   display: none;
-  @media only screen and (min-width: 892px) {
+  @media only screen and (min-width: 992px) {
     display: block;
   }
 `;
@@ -174,4 +183,7 @@ const InfoButton = styled.div`
       box-shadow: 0 0px 2px #848484, 0 0px 2px #848484;
     }
   }
+`;
+const ButtonsWrappers = styled.div`
+  margin: 85px 0px;
 `;
