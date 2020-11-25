@@ -22,9 +22,12 @@ export const Galery = () => {
   return (
     <>
       <Grid>
-        <br />
-        <H1Wrapper>GALERIA</H1Wrapper>
-        <div>
+        <Row center="xs">
+          <Col xs={12}>
+            <H1Wrapper>GALERIA</H1Wrapper>
+          </Col>
+        </Row>
+        <GalleryWrapper>
           <Gallery photos={photos} onClick={openLightbox} />
           <ModalGateway>
             {viewerIsOpen ? (
@@ -40,7 +43,7 @@ export const Galery = () => {
               </Modal>
             ) : null}
           </ModalGateway>
-        </div>
+        </GalleryWrapper>
       </Grid>
     </>
   );
@@ -50,5 +53,10 @@ const H1Wrapper = styled.h1`
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-top: 90px;
+  margin-top: 130px;
+`;
+
+const GalleryWrapper = styled.div`
+  margin-top: 20px;
+  margin-bottom: 80px;
 `;
