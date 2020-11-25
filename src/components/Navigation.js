@@ -30,14 +30,14 @@ export const Navigation = () => {
       </BurgerButtonWrapper>
       <Grid>
         <Row center="xs">
-          <Col xs={12} sm={12} md={4} lg={5}>
+          <Col xs={12} sm={12} md={3} lg={4}>
             <LogoWrapper>
               <Link to="/">
                 MYCZKOWCE <div>SADYBA</div>
               </Link>
             </LogoWrapper>
           </Col>
-          <Col xs={12} sm={10} md={8} lg={7} id="SecondCol">
+          <Col xs={12} sm={10} md={9} lg={8} id="SecondCol">
             <MenuWrapper>
               <Row around="xs">
                 <Col>
@@ -96,7 +96,7 @@ const BurgerButtonWrapper = styled.div`
     }
   }
   display: block;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 892px) {
     display: none;
   }
 `;
@@ -152,7 +152,7 @@ const BurgerButtonCross = styled.div`
 `;
 const MenuWrapper = styled.div`
   display: none;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 892px) {
     display: block;
   }
 `;
@@ -168,6 +168,7 @@ const InfoButton = styled.div`
     color: #fff;
     text-transform: uppercase;
     border: none;
+    margin-right: 20px;
     :hover {
       cursor: pointer;
       box-shadow: 0 0px 2px #848484, 0 0px 2px #848484;
