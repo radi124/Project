@@ -13,15 +13,7 @@ export const Contact = () => {
 
       <Grid>
         <Row center="xs">
-          <Col xs={6} sm={4} md={4} lg={4}>
-            <ElementWrapper>
-              <H2Wrapper>NASZ ADRES</H2Wrapper>
-              Myczkowce 82
-              <br />
-              38-623 Solina
-            </ElementWrapper>
-          </Col>
-          <Col xs={6} sm={4} md={4} lg={4}>
+          <Col xs={6} sm={6} md={6} lg={6}>
             <ElementWrapper>
               <H2Wrapper>KONTAKT</H2Wrapper>
               telefon: 609 470 676
@@ -29,7 +21,7 @@ export const Contact = () => {
               email:
             </ElementWrapper>
           </Col>
-          <Col xs={12} sm={4} md={4} lg={4}>
+          <Col xs={6} sm={6} md={6} lg={6}>
             <ElementWrapper>
               <H2Wrapper>REZERWACJA MIEJSC</H2Wrapper>
               <a
@@ -40,19 +32,18 @@ export const Contact = () => {
               </a>
             </ElementWrapper>
           </Col>
+          <Col xs={12} sm={12} md={12} lg={12}>
+            <ElementWrapper>
+              <H2Wrapper>NASZ ADRES</H2Wrapper>
+              Myczkowce 82
+              <br />
+              38-623 Solina
+            </ElementWrapper>
+          </Col>
         </Row>
         <Row>
-          <Col>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2584.2538108892363!2d20.677571515657647!3d49.63067077937066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1606342013657!5m2!1spl!2spl"
-              width="800"
-              height="600"
-              frameBorder="0"
-              style="border:0;"
-              allowFullScreen=""
-              ariaHidden="false"
-              tabIndex="0"
-            ></iframe>
+          <Col xs={12}>
+            <Map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7775.050433719672!2d22.409332438849347!3d49.435153191285096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bf5a0643c8783%3A0xe43319d4fb7cbf42!2sMyczkowce%2082%2C%2038-623%20Uherce%20Mineralne!5e0!3m2!1spl!2spl!4v1606343214696!5m2!1spl!2spl" />
           </Col>
         </Row>
       </Grid>
@@ -72,12 +63,7 @@ const H2Wrapper = styled.h2`
   display: flex;
   margin-top: 40px;
 `;
-const ULWrapper = styled.div`
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  display: flex;
-`;
+
 const ButtonContact = styled.button`
 padding: 7px;
   border-radius: 10px;
@@ -102,4 +88,14 @@ const ElementWrapper = styled.div`
   flex-direction: column;
   display: flex;
   padding: 10px 30px 10px 30px;
+`;
+const Map = styled.iframe`
+  height: 60vh;
+  max-height: 500px;
+  width: 100%;
+  margin-bottom: 80px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 0px 4px 1px rgba(119, 119, 119, 0.4);
+  margin-top: 40px;
 `;

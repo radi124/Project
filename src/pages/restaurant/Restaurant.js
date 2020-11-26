@@ -14,10 +14,10 @@ export const Restaurant = () => {
       <Grid>
         <Container>
           <Col>
-            <H2Wrapper>
+            <H1Wrapper>
               {" "}
               MYCZKOWCE <div>SADYBA</div>
-            </H2Wrapper>
+            </H1Wrapper>
           </Col>
 
           <InfoPicture>
@@ -55,7 +55,7 @@ export const Restaurant = () => {
               </Col>
             </Row>
           </InfoPicture>
-          <H3Wrapper>OFERUJEMY</H3Wrapper>
+          <H2Wrapper>OFERUJEMY</H2Wrapper>
           <Row center="xs">
             <UlWrapper>
               <Col xs={12} lgOffset={1} lg={10}>
@@ -94,7 +94,7 @@ export const Restaurant = () => {
             <Col>
               <MenuWrapper>
                 <ImageWrapper>
-                  to bedzie menu
+                  tu bedzie menu
                   <Image1 src={photo3} />
                 </ImageWrapper>
               </MenuWrapper>
@@ -118,10 +118,13 @@ const InfoPicture = styled.div`
   justify-content: center;
 `;
 const Container = styled.div`
-  padding-left: 40px;
-  padding-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 500;
 `;
-const H2Wrapper = styled.h2`
+const H1Wrapper = styled.h1`
   color: rgb(236, 159, 14);
   align-items: center;
   display: flex;
@@ -162,7 +165,7 @@ const UlWrapper = styled.div`
   text-transform: uppercase;
   color: white;
 `;
-const H3Wrapper = styled.h3`
+const H2Wrapper = styled.h2`
   color: rgb(236, 159, 14);
   display: flex;
   flex-direction: row;

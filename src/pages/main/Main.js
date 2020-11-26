@@ -152,6 +152,7 @@ const TextWrapper = styled.div`
   text-align: left;
   margin: 0px 15px 40px 15px;
   line-height: 1.4;
+  font-size: 18px;
 `;
 
 const FirstTextWrapper = styled.div`
@@ -159,4 +160,6 @@ const FirstTextWrapper = styled.div`
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 1.4;
+  margin-right: 20px;
+  margin-left: 20px;
 `;

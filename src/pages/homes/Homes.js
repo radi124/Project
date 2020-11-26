@@ -32,7 +32,7 @@ export const Homes = () => {
           <Row>
             <Col>
               {" "}
-              <H3Wrapper>UDOGODNIENIA</H3Wrapper>
+              <H2Wrapper>UDOGODNIENIA</H2Wrapper>
             </Col>
           </Row>
           <Facilities>
@@ -107,7 +107,7 @@ const Ul = styled.ul`
 const Li = styled.li`
   padding-top: 15px;
 `;
-const H3Wrapper = styled.h3`
+const H2Wrapper = styled.h2`
   color: rgb(236, 159, 14);
   dispaly: flex;
   flex-direction: column;
@@ -115,10 +115,12 @@ const H3Wrapper = styled.h3`
 `;
 
 const Container = styled.div`
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+  line-height: 1.4;
 `;
 
 const ColWrapper = styled.div`
