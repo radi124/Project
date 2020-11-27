@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import phoneIcon from "../images/phone.svg";
 import facebookLogo from "../images/facebook.svg";
-import emailLogo from "../images/email.svg";
+import emailLogo from "../images/gmail.svg";
 import instalogo from "../images/instagram.svg";
 
 export const Footer = () => {

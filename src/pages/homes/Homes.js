@@ -101,9 +101,7 @@ const H1Wrapper = styled.h1`
 const Facilities = styled.div`
   width: 100%;
 `;
-const Ul = styled.ul`
-  position: relative;
-`;
+const Ul = styled.ul``;
 const Li = styled.li`
   padding-top: 15px;
 `;
