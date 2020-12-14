@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import photo2 from "../../images/src16.jpg";
-import photo3 from "../../images/pizza.JPG";
+import photo3 from "../../images/menu.jpg";
 import photo1 from "../../images/logosadyba.jpg";
 
 export const Restaurant = () => {
@@ -90,14 +90,9 @@ export const Restaurant = () => {
               </Col>
             </UlWrapper>
           </Row>
-          <Row>
-            <Col>
-              <MenuWrapper>
-                <ImageWrapper>
-                  tu bedzie menu
-                  <Image1 src={photo3} />
-                </ImageWrapper>
-              </MenuWrapper>
+          <Row center="xs">
+            <Col xs={12}>
+              <Image1 src={photo3} />
             </Col>
           </Row>
         </Container>
@@ -131,6 +126,7 @@ const H1Wrapper = styled.h1`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top: 70px;
 `;
 const TextWrapper = styled.div`
   text-align: left;
@@ -141,12 +137,19 @@ const TextWrapper = styled.div`
   }
 `;
 const MenuWrapper = styled.div`
-  height: 700px;
+  width: 100%;
   padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
 `;
 const Image1 = styled.img`
-  height: 600px;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  margin-top: 50px;
+  border-radius: 8px;
+  margin-bottom: 50px;
 `;
 const Image2 = styled.img`
   height: 300px;
