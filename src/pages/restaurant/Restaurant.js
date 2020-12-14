@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import photo2 from "../../images/src16.jpg";
-import photo3 from "../../images/pict2.webp";
+import photo3 from "../../images/pizza.JPG";
 import photo1 from "../../images/logosadyba.jpg";
 
 export const Restaurant = () => {
