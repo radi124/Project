@@ -19,7 +19,7 @@ export const Restaurant = () => {
               MYCZKOWCE <div>SADYBA</div>
             </H1Wrapper>
           </Col>
-
+          <Break></Break>
           <InfoPicture>
             <Row center="xs">
               <Col xs={12} sm={12} md={5} lg={4}>
@@ -136,20 +136,13 @@ const TextWrapper = styled.div`
     padding-top: 25px;
   }
 `;
-const MenuWrapper = styled.div`
-  width: 100%;
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid red;
-`;
+
 const Image1 = styled.img`
   max-width: 100%;
   max-height: 100vh;
   margin-top: 50px;
   border-radius: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 `;
 const Image2 = styled.img`
   height: 300px;
@@ -167,6 +160,8 @@ const UlWrapper = styled.div`
   justify-content: center;
   text-transform: uppercase;
   color: white;
+  margin-bottom: 40px;
+  margin-top: 40px;
 `;
 const H2Wrapper = styled.h2`
   color: rgb(236, 159, 14);
@@ -189,4 +184,7 @@ const OfferWrapper = styled.div`
   padding: 15px 0px;
   display: flex;
   flex-direction: column;
+`;
+const Break = styled.div`
+  margin-top: 40px;
 `;

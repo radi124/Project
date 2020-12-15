@@ -16,15 +16,7 @@ export const Main = (props) => {
           <Col xs={12}>
             <H1Wrapper> {props.Drugazakładka}</H1Wrapper>
           </Col>
-          <Col
-            xs={12}
-            sm={10}
-            smofset={1}
-            md={10}
-            mdofset={1}
-            lg={8}
-            lgofset={2}
-          >
+          <Col xs={12} sm={10} md={10} lg={8}>
             <FirstTextWrapper>
               Obiekt MYCZKOWCE SADYBA położony jest w miejscowości Uherce
               Mineralne. Wszystkie domy obejmują salon z sofą oraz w pełni
@@ -124,6 +116,7 @@ const Image = styled.img`
 `;
 
 const InfoButton = styled.div`
+  margin-top: 30px;
   a {
     letter-spacing: 1px;
     text-decoration: none;

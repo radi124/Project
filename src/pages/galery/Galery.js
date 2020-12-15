@@ -49,7 +49,7 @@ export const Galery = () => {
   );
 };
 const H1Wrapper = styled.h1`
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.9);
   align-items: center;
   display: flex;
   justify-content: center;
