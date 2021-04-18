@@ -4,9 +4,10 @@ import styled from "styled-components";
 import photo1 from "../../images/src9.jpg";
 import photo2 from "../../images/src12.jpg";
 import { Link } from "react-router-dom";
-
 import photo4 from "../../images/sadyba.jpg";
-
+import motel from "./images/motomotelik_main.jpg";
+import motor from "./images/motomyczki_main.jpg";
+import imprezy from "./images/imprezy_okolicznościowe_main.jpg";
 export const Main = (props) => {
   return (
     <>
@@ -47,14 +48,13 @@ export const Main = (props) => {
           <Col xs={12} sm={12} md={8} lg={7}>
             <H1Wrapper>RESTAURACJA</H1Wrapper>
             <TextWrapper>
-              Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-              pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
-              malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
-              porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor sit
-              amet enim. Etiam ullamcorper. Slutpat a,
+              Zapraszamy strudzonych wędrowców do cichej i przytulnej
+              restauracji na pyszne domowe obiady przyrządzane w tradycyjny
+              sposób.
             </TextWrapper>
             <InfoButton>
-              <Link to="../restaurant">więcej</Link>
+              <Link to="../restaurant">więcej</Link>{" "}
+              {/* trzeba zmienic link na podstrone  */}
             </InfoButton>
           </Col>
         </Row>
@@ -64,14 +64,15 @@ export const Main = (props) => {
         <Offset />
         <Row center="xs">
           <Col xs={12} sm={12} md={8} lg={7}>
-            <H1Wrapper>Domki</H1Wrapper>
+            <H1Wrapper>MYCZKOWCE SADYBA</H1Wrapper>
             <TextWrapper>
-              Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a
-              pellentesque dui, non felis. Maecenas malesuada elit lectus felis,
-              malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies
-              porta urna. Vestibulum commodo volutpat a, Lorem ipsum dolor sit
-              amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non
-              felis urna. Vestibulum commodo volutpat a,
+              Domek Lniany, Makowy, Lawendowy, RóżanyOferujemy wypoczynek w
+              całorocznych max 7 os domach. Domki posiadają kominki oraz
+              ogrzewanie elektryczne. Do zaoferowania posiadamy duży dom max 9
+              os. Dom całoroczny z przestronnym salonem z kominkiem i kuchnią.
+              Oferujemy starą, wyremontowaną chałupę max 8 os, w której czas się
+              zatrzymał. Dom z przestronną kuchnią, w której dodatkowo znajduje
+              się stary piec kaflowy.
             </TextWrapper>
             <InfoButton>
               <Link to="../cottages">więcej</Link>
@@ -82,6 +83,64 @@ export const Main = (props) => {
           </Col>
         </Row>
         <Offset />
+        <Offset />
+        <Row center="xs">
+          <Col xs={12} sm={12} md={4} lg={5}>
+            <PhotoColumn src={motel} />
+          </Col>
+          <Col xs={12} sm={12} md={8} lg={7}>
+            <H1Wrapper>MotoMotelik</H1Wrapper>
+            {/* zeby bylo na odwrot na minimalu */}
+            <TextWrapper>
+              Specjalnie dla zmotoryzowanych i oczywiście nie tylko! do
+              zaoferowania mamy nowo powstały MotoMotelik. Z monitorowanym
+              parkingiem! Nieograniczony dostęp do sieci WiFi.Oferujemy
+            </TextWrapper>
+            <InfoButton>
+              <Link to="../restaurant">więcej</Link>
+            </InfoButton>
+          </Col>
+        </Row>
+        <Row center="xs">
+          <Col xs={6} id="S2Container"></Col>
+        </Row>
+        <Offset />
+        <DoubleName>
+          <Row center="xs">
+            <Col xs={12} sm={12} md={4} lg={6}>
+              <H1Wrapper>MotoMyczki</H1Wrapper>
+              <TextWrapper>
+                Miejsce, które powstało z pasji do motocykli. Znajdziesz tu
+                zawsze pomoc oraz dach nad głową i najesz się do syta a przy
+                kuflu zimnego piwka przegadasz cała noc! W tym miejscu możesz
+                podzielić się z nami swoimi opowieściami z podróży. Zajmujemy
+                się pomocą w organizacji zlotów oraz podajemy pomocną dłon i
+                wskazujemy ciekawe i warte przejechania trasy. Dla naszych gości
+                organizujemy safari po okolicy.
+              </TextWrapper>
+              <PhotoColumnv2 src={motor} />
+              <InfoButton>
+                <Link to="../cottages">więcej</Link>
+              </InfoButton>
+            </Col>
+            <Col xs={12} sm={12} md={4} lg={6}>
+              <H1Wrapper> Imprezy okolicznościowe</H1Wrapper>
+              <TextWrapper>
+                W naszej ofercie można też znaleźć organizację imprez
+                okolicznościowych takich jak chrzciny, komunia, urodziny czy
+                spotkanie integracyjne. Sami lubimy uczestniczyć w takich
+                wydarzeniach, dlatego chętnie przygotujemy je specjalnie dla
+                Ciebie! Menu i forma przyjęcia omawiana jest indywidualnie
+                telefonicznie lub osobiście (po wcześniej umówionym spotkaniu).
+                Ceny uzależnione są od terminu i ilości osób.
+              </TextWrapper>
+              <PhotoColumnv2 src={imprezy} />
+              <InfoButton>
+                <Link to="../cottages">więcej</Link>
+              </InfoButton>
+            </Col>
+          </Row>
+        </DoubleName>
       </Grid>
     </>
   );
@@ -94,7 +153,13 @@ const PhotoColumn = (props) => {
     </PhotoWrapper>
   );
 };
-
+const PhotoColumnv2 = (props) => {
+  return (
+    <PhotoWrapperv2>
+      <Photov2 src={props.src} />
+    </PhotoWrapperv2>
+  );
+};
 const Photo = styled.img`
   width: 100%;
   height: 230px;
@@ -106,6 +171,7 @@ const Photo = styled.img`
 
 const PhotoWrapper = styled.div`
   width: 100%;
+  margin-top: 20px;
 `;
 
 const Image = styled.img`
@@ -155,4 +221,22 @@ const FirstTextWrapper = styled.div`
   line-height: 1.4;
   margin-right: 20px;
   margin-left: 20px;
+`;
+const DoubleName = styled.div`
+  margin-top: 100px;
+  margin-bottom: 100px;
+`;
+const Photov2 = styled.img`
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  height: 250px;
+  margin-top: 14px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 1px 0px 4px 1px rgba(119, 119, 119, 0.4);
+`;
+
+const PhotoWrapperv2 = styled.div`
+  width: 100%;
 `;

@@ -12,7 +12,7 @@ export const Navigation = () => {
           <Menu id="burger-menu" right>
             <Link to="/">Strona główna</Link>
 
-            <Link to="/restaurant">Restauracja</Link>
+            <Link to="/offer">Oferta</Link>
 
             <Link to="/gallery">Galeria</Link>
 
@@ -42,7 +42,7 @@ export const Navigation = () => {
                 </Col>
                 <Col>
                   <ButtonWrapper>
-                    <Link to="/restaurant">Restauracja</Link>
+                    <Link to="/offer">Oferta</Link>
                   </ButtonWrapper>
                 </Col>
                 <Col>

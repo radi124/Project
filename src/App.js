@@ -18,7 +18,7 @@ function App() {
           <Route path="/cottages">
             <Pages.Homes />
           </Route>
-          <Route path="/restaurant">
+          <Route path="/offer">
             <Pages.Restaurant />
           </Route>
           <Route path="/">

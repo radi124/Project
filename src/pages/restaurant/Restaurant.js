@@ -16,41 +16,26 @@ export const Restaurant = () => {
           <Col>
             <H1Wrapper>
               {" "}
-              MYCZKOWCE <div>SADYBA</div>
+              Restauracja <div> MYCZKOWIANKA </div>
             </H1Wrapper>
           </Col>
           <Break></Break>
           <InfoPicture>
             <Row center="xs">
-              <Col xs={12} sm={12} md={5} lg={4}>
+              <Col xs={12} sm={12} md={5} lg={3}>
                 <Image2 src={photo1} />
               </Col>
-              <Col xs={12} sm={12} md={7} lg={8}>
+              <Col xs={12} sm={12} md={7} lg={9}>
                 <TextWrapper>
-                  Obiekt MYCZKOWCE SADYBA położony jest w miejscowości Uherce
-                  Mineralne.
-                  <div className="info">
-                    {" "}
-                    Oferuje on wspólny salon, ogród oraz sprzęt do grillowania.
-                    Na miejscu działa bar i restauracja. Dla dzieci przygotowano
-                    plac zabaw. Z okien roztaczają się widoki na rzekę.
-                  </div>
-                  {/* <div className="info">
-                    Wszystkie domy obejmują salon z sofą oraz w pełni wyposażoną
-                    kuchnię. W łazience znajduje się wanna lub prysznic.
-                    Mieszczą one również jadalnię i część wypoczynkową.
-                    Codziennie rano na miejscu serwowane jest śniadanie w formie
-                    bufetu. Do dyspozycji Gości jest taras. W okolicy panują
-                    dobre warunki do uprawiania turystyki pieszej. Na miejscu
-                    można wypożyczyć rowery.
-                  </div> */}
-                  <div className="info">
-                    Obiekt MYCZKOWCE SADYBA jest oddalony o 13 km od Polańczyka
-                    i o 38 km od Arłamowa. Odległość od lotniska
-                    Rzeszów-Jasionka wynosi 114 km. Transfer lotniskowy dostępny
-                    jest za dodatkową opłatą. Mówimy w Twoim języku! Obiekt
-                    MYCZKOWCE SADYBA obsługuje Gości Booking.com od 8 PAŹ 2019.
-                  </div>
+                  Zapraszamy strudzonych wędrowców do cichej i przytulnej
+                  restauracji na pyszne domowe obiady przyrządzane w tradycyjny
+                  sposób. W naszym menu znajdzie się coś dla każdego i dołożymy
+                  wszelkich starań, aby nie wypuścić z naszej Myczkowianki
+                  nikogo głodnego! Zapraszamy na domowe pierogi, regionalne
+                  potrawy i oczywiście na naszego wyśmienitego pstrąga
+                  smażonego. A na deser zapraszamy do naszego słodkiego domku,
+                  gdzie można zamówić deser lodowy, ciasteczko czy gofry
+                  popijając pysznąkawką. ZAPRASZAMY!
                 </TextWrapper>
               </Col>
             </Row>
