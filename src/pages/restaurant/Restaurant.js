@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import photo2 from "../../images/src16.jpg";
 import photo3 from "../../images/menu.jpg";
-import photo1 from "../../images/logosadyba.jpg";
+import photo1 from "./images/mainPhoto.jpg";
 
 export const Restaurant = () => {
   return (
@@ -22,10 +22,10 @@ export const Restaurant = () => {
           <Break></Break>
           <InfoPicture>
             <Row center="xs">
-              <Col xs={12} sm={12} md={5} lg={3}>
+              <Col xs={12} sm={12} md={5} lg={4}>
                 <Image2 src={photo1} />
               </Col>
-              <Col xs={12} sm={12} md={7} lg={9}>
+              <Col xs={12} sm={12} md={7} lg={8}>
                 <TextWrapper>
                   Zapraszamy strudzonych wędrowców do cichej i przytulnej
                   restauracji na pyszne domowe obiady przyrządzane w tradycyjny

@@ -13,6 +13,9 @@ export const Main = (props) => {
     <>
       <Image src={photo4} />
       <Grid>
+        <Link to="/myczkowce-sadyba">dupa</Link>
+        blala
+        <Link to="/moto-motelik">moto</Link>
         <Row center="xs">
           <Col xs={12}>
             <H1Wrapper> {props.Drugazakładka}</H1Wrapper>
@@ -57,6 +60,9 @@ export const Main = (props) => {
               {/* trzeba zmienic link na podstrone  */}
             </InfoButton>
           </Col>
+          <Col xs={12} sm={12} md={4} lg={5}>
+            <PhotoColumn3 src={photo1} />
+          </Col>
         </Row>
         <Row center="xs">
           <Col xs={6} id="S2Container"></Col>
@@ -79,7 +85,7 @@ export const Main = (props) => {
             </InfoButton>
           </Col>
           <Col xs={12} sm={12} md={4} lg={5}>
-            <PhotoColumn src={photo2} />
+            <PhotoColumn2 src={photo2} />
           </Col>
         </Row>
         <Offset />
@@ -100,6 +106,9 @@ export const Main = (props) => {
               <Link to="../restaurant">więcej</Link>
             </InfoButton>
           </Col>
+          <Col xs={12} sm={12} md={4} lg={5}>
+            <PhotoColumn3 src={motel} />
+          </Col>
         </Row>
         <Row center="xs">
           <Col xs={6} id="S2Container"></Col>
@@ -107,7 +116,7 @@ export const Main = (props) => {
         <Offset />
         <DoubleName>
           <Row center="xs">
-            <Col xs={12} sm={12} md={4} lg={6}>
+            <Col xs={12} sm={12} md={8} lg={7}>
               <H1Wrapper>MotoMyczki</H1Wrapper>
               <TextWrapper>
                 Miejsce, które powstało z pasji do motocykli. Znajdziesz tu
@@ -118,12 +127,21 @@ export const Main = (props) => {
                 wskazujemy ciekawe i warte przejechania trasy. Dla naszych gości
                 organizujemy safari po okolicy.
               </TextWrapper>
-              <PhotoColumnv2 src={motor} />
               <InfoButton>
                 <Link to="../cottages">więcej</Link>
               </InfoButton>
             </Col>
-            <Col xs={12} sm={12} md={4} lg={6}>
+            <Col xs={12} sm={12} md={4} lg={5}>
+              <PhotoColumn2 src={motor} />
+            </Col>
+          </Row>
+          <Offset />
+          <Offset />
+          <Row center="xs">
+            <Col xs={12} sm={12} md={4} lg={5}>
+              <PhotoColumn src={imprezy} />{" "}
+            </Col>
+            <Col xs={12} sm={12} md={8} lg={7}>
               <H1Wrapper> Imprezy okolicznościowe</H1Wrapper>
               <TextWrapper>
                 W naszej ofercie można też znaleźć organizację imprez
@@ -134,10 +152,12 @@ export const Main = (props) => {
                 telefonicznie lub osobiście (po wcześniej umówionym spotkaniu).
                 Ceny uzależnione są od terminu i ilości osób.
               </TextWrapper>
-              <PhotoColumnv2 src={imprezy} />
               <InfoButton>
                 <Link to="../cottages">więcej</Link>
               </InfoButton>
+            </Col>
+            <Col xs={12} sm={12} md={4} lg={5}>
+              <PhotoColumn3 src={imprezy} />{" "}
             </Col>
           </Row>
         </DoubleName>
@@ -153,11 +173,19 @@ const PhotoColumn = (props) => {
     </PhotoWrapper>
   );
 };
-const PhotoColumnv2 = (props) => {
+
+const PhotoColumn2 = (props) => {
   return (
-    <PhotoWrapperv2>
-      <Photov2 src={props.src} />
-    </PhotoWrapperv2>
+    <PhotoWrapper2>
+      <Photo2 src={props.src} />
+    </PhotoWrapper2>
+  );
+};
+const PhotoColumn3 = (props) => {
+  return (
+    <PhotoWrapper3>
+      <Photo3 src={props.src} />
+    </PhotoWrapper3>
   );
 };
 const Photo = styled.img`
@@ -167,6 +195,10 @@ const Photo = styled.img`
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 1px 0px 4px 1px rgba(119, 119, 119, 0.4);
+  display: block;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const PhotoWrapper = styled.div`
@@ -226,17 +258,34 @@ const DoubleName = styled.div`
   margin-top: 100px;
   margin-bottom: 100px;
 `;
-const Photov2 = styled.img`
-  width: 80%;
-  justify-content: center;
-  text-align: center;
-  height: 250px;
+const Photo2 = styled.img`
+  width: 100%;
+  height: 230px;
   margin-top: 14px;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 12px;
   box-shadow: 1px 0px 4px 1px rgba(119, 119, 119, 0.4);
 `;
 
-const PhotoWrapperv2 = styled.div`
+const PhotoWrapper2 = styled.div`
   width: 100%;
+  margin-top: 50px;
+`;
+
+const Photo3 = styled.img`
+  width: 100%;
+  height: 230px;
+  margin-top: 14px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 1px 0px 4px 1px rgba(119, 119, 119, 0.4);
+  display: block;
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const PhotoWrapper3 = styled.div`
+  width: 100%;
+  margin-top: 50px;
 `;

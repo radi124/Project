@@ -19,6 +19,10 @@ export const Navigation = () => {
             <Link to="/cottages">Domki</Link>
 
             <Link to="/contact">Kontakt</Link>
+
+            <Link to="/myczkowceSadyba">myczki</Link>
+
+            <Link to="/motoMotelik">moto</Link>
           </Menu>
         </BurgerButtonCross>
       </BurgerButtonWrapper>

@@ -21,6 +21,12 @@ function App() {
           <Route path="/offer">
             <Pages.Restaurant />
           </Route>
+          <Route path="/myczkowce-sadyba">
+            <Pages.MyczkowceSadyba />
+          </Route>
+          <Route path="/moto-motelik">
+            <Pages.MotoMotelik />
+          </Route>
           <Route path="/">
             <Pages.Main Drugazakładka="O NAS" />
           </Route>
